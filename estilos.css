@@ -30,6 +30,8 @@
     position: fixed;
     width: 100vw;
     z-index: 1;
+    background-color: rgba(79, 79, 79, 0.5);
+    backdrop-filter: blur(20px);
 }
 
 .secciones ul{
@@ -38,13 +40,13 @@
 
 .listaNav li{
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
     list-style: none;
 }
 
 .listaNav li a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -52,6 +54,7 @@
     background-color: transparent;
     border: none;
     padding: 10px;
+    color: white;
 }
 
 .info {
@@ -229,7 +232,7 @@ body {
 a,
 a:hover {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 .sectionProducts {
@@ -375,4 +378,14 @@ a:hover {
     height: 1px;
     background-color: #444444;
     transform: translateY(-50%);
+}
+
+
+
+ul{
+    margin-bottom: 0;
+}
+
+ol, ul {
+    padding-left: 0;
 }

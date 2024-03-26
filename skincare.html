@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NATURE</title>
+    <title>NATURE - Skincare</title>
     
+    <!-- Agrega Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <!-- Contenido de tu página -->
     <main class="main">
+        <!-- Navbar -->
         <section class="navbar">
-            <div class="logo">
-                <h1>NATURE</h1>
-            </div>
+            <!-- Logo -->
+            <a href="index.html">
+                <div class="logo"> 
+                    <h1>NATURE</h1>
+                </div>
+            </a>
+            
+            <!-- Menú de navegación -->
             <div class="secciones">
                 <ul class="listaNav">
                     <li><a href="skincare.html">Skincare</a></li>
@@ -24,8 +32,9 @@
                     <li><a href="#">Guides</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                
             </div>
+            
+            <!-- Botones de bolsa y favoritos -->
             <div class="shop">
                 <button class="bag">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
@@ -39,21 +48,182 @@
                 </button>
             </div>
         </section>
+        
+        <!-- Banner -->
         <div class="banner">
             <img class="background" src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" alt="">
             <div class="info">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
                 <p><a class="explore" href="explore">EXPLORE</a></p>
-        
             </div>
         </div>
+        
     </main>
-
-
-
-
     
+    <!-- Grilla de productos con desplegables para filtrar -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+
+                <div class="container mt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Ingredientes
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Opción 1</li>
+                                        <li class="list-group-item">Opción 2</li>
+                                        <li class="list-group-item">Opción 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Usos
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Opción A</li>
+                                        <li class="list-group-item">Opción B</li>
+                                        <li class="list-group-item">Opción C</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Grilla de productos -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Aquí puedes iterar sobre tus productos y mostrarlos -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="producto1.jpg" class="card-img-top" alt="Producto 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Nombre del Producto 1</h5>
+                                <p class="card-text">Descripción corta del producto.</p>
+                                <a href="#" class="btn btn-primary">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repite este bloque para cada producto -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <footer class="footer">
+            <div class="footerLogo">
+                <h5>NATURE</h5>
+            </div>
+            <div>
+                <ul class="footerUl">
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <p>Todos los derehos reservados 2023</p>
+            </div>
+        </footer>
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
