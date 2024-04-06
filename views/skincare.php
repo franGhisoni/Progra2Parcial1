@@ -8,7 +8,7 @@
     <!-- Agrega Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <!-- Contenido de tu página -->

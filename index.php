@@ -8,13 +8,13 @@
     <!-- Agrega Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <!-- Contenido de tu página -->
     <main class="main">
         <section class="navbar">
-            <a href="index.html">
+            <a href="index.php">
                 <div class="logo"> 
                     <h1>NATURE</h1>
                 </div>
@@ -22,12 +22,12 @@
             
             <div class="secciones">
                 <ul class="listaNav">
-                    <li><a href="skincare.html">Skincare</a></li>
+                    <li><a href="views/skincare.php">Skincare</a></li>
                     <li><a href="#">Makeup</a></li>
                     <li><a href="#">Hair</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Guides</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="views/contact.php">Contact</a></li>
                 </ul>
                 
             </div>
@@ -59,7 +59,7 @@
             <h2>Categorias</h2>
             <div class="catGrid">
                 <div class="card text-bg-dark">
-                    <a href="pagina1.html">
+                    <a href="pagina1.php">
                         <img src="img/img cuadrada 1.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Skincare</h5>
@@ -67,7 +67,7 @@
                     </a>
                 </div>
                 <div class="card text-bg-dark">
-                    <a href="pagina2.html">
+                    <a href="pagina2.php">
                         <img src="img/img cuadrada 2.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Makeup</h5>
@@ -75,7 +75,7 @@
                     </a>
                 </div>
                 <div class="card text-bg-dark">
-                    <a href="pagina3.html">
+                    <a href="pagina3.php">
                         <img src="img/img cuadrada 3.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Hair</h5>
