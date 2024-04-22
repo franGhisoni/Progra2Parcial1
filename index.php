@@ -5,17 +5,11 @@ $secciones_validas = [
     "home" => [
         "titulo" => "Inicio"
     ],
-    "skincare" => [
-        "titulo" => "Skincare"
+    "alumnos" => [
+        "titulo" => "Los + Lindos :3 uwu"
     ],
-    "makeup" => [
-        "titulo" => "Makeup"
-    ],
-    "hair" => [
-        "titulo" => "Hair"
-    ],
-    "alumno" => [
-        "titulo" => "Yo"
+    "productos" => [
+        "titulo" => "Productos"
     ],
     "contacto" => [
         "titulo" => "Contacto"
@@ -43,7 +37,6 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NATURE | <?= $titulo ?></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>

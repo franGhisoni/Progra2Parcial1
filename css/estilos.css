@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,17 +11,16 @@
     display: flex;
 }
 
-/* Agrega este CSS a tu archivo estilos.css o en línea en la etiqueta <style> dentro del head */
 .banner {
     width: 100%;
-    overflow: hidden; /* Evita el desplazamiento horizontal */
+    overflow: hidden;
     position: relative;
 }
 
 .background {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacio debajo de la imagen debido a display:inline */
+    height: auto;
+    display: block;
 }
 
 
@@ -88,35 +89,34 @@
     margin-top: 40px;
 }
 
-/* Agrega estos estilos CSS en tu archivo de estilos (estilos.css) o en línea en el head de tu HTML */
 .card {
-    position: relative; /* Establece la posición relativa para el contenedor de la tarjeta */
+    position: relative;
 }
 
 .card::before {
-    content: ""; /* Crea un pseudo-elemento antes del contenido real de la tarjeta */
-    position: absolute; /* Establece la posición absoluta para el pseudo-elemento */
-    top: 0; /* Coloca el pseudo-elemento en la parte superior de la tarjeta */
-    left: 0; /* Coloca el pseudo-elemento en la parte izquierda de la tarjeta */
-    width: 100%; /* Ajusta el ancho del pseudo-elemento al 100% de la tarjeta */
-    height: 100%; /* Ajusta la altura del pseudo-elemento al 100% de la tarjeta */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
-    opacity: 0; /* Inicialmente, el velo es completamente transparente */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .card:hover::before {
-    opacity: 1; /* Cuando se coloca el puntero sobre la tarjeta, el velo se vuelve completamente visible */
+    opacity: 1;
 }
 
 .card-title {
-    position: absolute; /* Establece la posición absoluta para el título */
-    top: 50%; /* Alinea la parte superior del título en el centro vertical de la tarjeta */
-    left: 50%; /* Alinea la izquierda del título en el centro horizontal de la tarjeta */
-    transform: translate(-50%, -50%); /* Centra completamente el título */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Agrega relleno alrededor del título */
-    text-align: center; /* Centra el texto horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .about{
@@ -222,8 +222,6 @@
 
 /**/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
 body {
     font-family: "Poppins", sans-serif;
     color: #444444;
@@ -283,18 +281,18 @@ a:hover {
 }
 
 .sectionProducts #product-1 .part-1::before {
-    background: url("img/img\ cuadrada\ 1.jpg") no-repeat center;
+    background: url("../img/img\ cuadrada\ 1.jpg") no-repeat center;
     background-size: cover;
 		transition: all 0.3s;
 }
 
 .sectionProducts #product-2 .part-1::before {
-    background: url("img/img\ cuadrada\ 2.jpg") no-repeat center;
+    background: url("../img/img\ cuadrada\ 2.jpg") no-repeat center;
     background-size: cover;
 }
 
 .sectionProducts #product-3 .part-1::before {
-    background: url("img/img\ cuadrada\ 3.jpg") no-repeat center;
+    background: url("../img/img\ cuadrada\ 3.jpg") no-repeat center;
     background-size: cover;
 }
 
