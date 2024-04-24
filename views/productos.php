@@ -1,11 +1,10 @@
 <?php
+require_once 'classes/producto.php';
+
 $id = $_GET['id'] ?? FALSE;
 
 $miProducto = new Producto();
-$comic = $miProducto->productoPorId($id);
-
-$json_data = file_get_contents('datos/productos.json');
-$productos = json_decode($json_data);
+$productos = $miProducto->catalogoCompleto();
 
 ?>
 <div class="container">
@@ -14,10 +13,10 @@ $productos = json_decode($json_data);
             foreach ($productos as $producto) { ?>
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="<?= $producto->imagen ?>" class="card-img-top" alt="<?= $producto->nombre ?>">
+                        <img src="<?= $producto->getImagen() ?>" class="card-img-top" alt="<?= $producto->getNombre() ?>">
                         <div class="card-body">
-                            <h5 class="card-title"><?= $producto->nombre ?></h5>
-                            <p class="card-text"><?= $producto->descripcion ?></p>
+                            <h5 class="card-title"><?= $producto->getNombre() ?></h5>
+                            <p class="card-text"><?= $producto->getDescripcion() ?></p>
                             <a href="#" class="btn btn-primary">Ver detalles</a>
                         </div>
                     </div>
