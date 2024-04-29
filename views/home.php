@@ -3,7 +3,7 @@
             <div class="info">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
-                <p><a class="explore" href="explore">EXPLORE</a></p>
+                <button class="button-exp" role="button">EXPLORE</button>
         
             </div>
         </div>
@@ -183,7 +183,7 @@
                 <div class="textGuide">
                     <h2>Guía de Prueba de Parches</h2>
                     <p>Las pruebas de parche son una herramienta sencilla para prever reacciones negativas iniciales a un producto nuevo. Se recomienda realizar una prueba de parche antes de usar un producto por primera vez en tu rutina.</p>
-                    <p><a class="explore" href="explore">EXPLORE</a></p>
+                    <button class="button-exp" role="button">EXPLORE</button>
                 </div>
             </div>
     </section>
