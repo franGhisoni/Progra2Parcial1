@@ -246,6 +246,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    margin: 0 20px;
   }
   
   .button-exp:active,
