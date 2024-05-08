@@ -29,4 +29,4 @@ $productos = json_decode($json_data);
             </div>
         <?php } ?>
     </div>
-</div>
+</div> 

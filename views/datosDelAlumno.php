@@ -16,7 +16,6 @@
                             <ul class="list-unstyled d-flex justify-content-center">
                                 <li class="me-3"><a href="#" class="text-decoration-none">Facebook</a></li>
                                 <li class="me-3"><a href="#" class="text-decoration-none">Twitter</a></li>
-                                <!-- Agrega más redes sociales si es necesario -->
                             </ul>
                         </div>
                     </div>
