@@ -9,7 +9,7 @@
         
         <ul class="listaNav">
             <li><a href="index.php?sec=home">Inicio</a></li>
-            <li><a href="index.php?sec=about">Nosotros</a></li>
+            <li><a href="index.php?sec=home#about">Nosotros</a></li>
             <li><a href="index.php?sec=productos">Productos</a></li>
             <li><a href="index.php?sec=alumnos">Staff</a></li>
             <li><a href="index.php?sec=contacto">Contacto</a></li>

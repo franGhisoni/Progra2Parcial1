@@ -39,7 +39,7 @@
             </div>
             
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <div class="infoAbout">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>

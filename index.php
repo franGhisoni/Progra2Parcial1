@@ -13,9 +13,6 @@ $secciones_validas = [
     ],
     "contacto" => [
         "titulo" => "Contacto"
-    ],
-    "testeo" => [
-        "titulo" => "Test"
     ]
 ];
 
