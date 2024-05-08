@@ -43,7 +43,7 @@
             <div class="infoAbout">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
-                <p><a class="explore" href="explore">EXPLORE</a></p>
+                <p><button class="button-exp" role="button">EXPLORE</button></p>
             </div>
             <div class="imagen">
                 <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="">
