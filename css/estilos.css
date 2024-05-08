@@ -246,6 +246,9 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+  }
+
+  .textGuide .button-exp{
     margin: 0 20px;
   }
   
