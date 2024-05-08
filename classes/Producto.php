@@ -13,15 +13,16 @@ class Producto
     private $lanzamiento;
 
     public function catalogoCompleto(): array
-    {
-        $catalogo = [];
+{
+    $catalogo = [];
 
-        $JSON = file_get_contents('datos/productos.json');
-        $JSONData = json_decode($JSON);
+    $JSON = file_get_contents('datos/productos.json');
+    $JSONData = json_decode($JSON);
 
-        foreach ($JSONData as $value) {
+    foreach ($JSONData as $categoria => $productos) {
+        foreach ($productos as $value) {
             $producto = new self();
-
+    
             $producto->id = $value->id;
             $producto->nombre = $value->nombre;
             $producto->descripcion = $value->descripcion;
@@ -29,14 +30,22 @@ class Producto
             $producto->imagen = $value->imagen;
             $producto->stock = $value->stock;
             $producto->categoria = $value->categoria;
-            $producto->piel = $value->piel;
+            
+            if (isset($value->piel)) {
+                $producto->piel = $value->piel;
+            } else {
+                $producto->piel = "No especificado";
+            }
+    
             $producto->lanzamiento = $value->lanzamiento;
-
+    
             $catalogo[] = $producto;
         }
+    }        
 
-        return $catalogo;
-    }
+    return $catalogo;
+}
+
 
     /**
      * Devuelve el catalogo de productos de un nombre en particular
