@@ -54,6 +54,8 @@ $producto = $miObjetoProducto->productoPorId($id);
                     </div>
                 </div>
 
+                <div class="cuadrado"></div>
+
 
             </div>
         <?PHP } else { ?>
