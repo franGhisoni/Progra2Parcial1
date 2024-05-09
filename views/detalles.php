@@ -1,16 +1,14 @@
 <?php
-// Simulación de productos desde un archivo JSON
-$productos_json = file_get_contents('productos.json');
-$productos = json_decode($productos_json, true);
+require_once '../classes/Producto.php'; // Asegúrate de que el nombre del archivo coincida
 
-// Verificar si se pasó un ID de producto válido en la URL
-if (isset($_GET['id']) && isset($productos[$_GET['id']])) {
-    $id_producto = $_GET['id'];
-    $producto = $productos[$id_producto];
-} else {
-    // Redireccionar o mostrar un mensaje de error si no se encontró el producto
-    header("Location: index.php");
-    exit();
+// Obtener el ID del producto desde la URL
+$idProducto = $_GET['id'] ?? null;
+
+// Obtener el objeto Producto correspondiente
+$producto = null;
+if ($idProducto !== null) {
+    $miProducto = new Producto();
+    $producto = $miProducto->productoPorId($idProducto);
 }
 ?>
 
@@ -20,23 +18,21 @@ if (isset($_GET['id']) && isset($productos[$_GET['id']])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Producto</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega tus estilos CSS aquí -->
 </head>
 <body>
-
     <div class="container">
-        <h1>Detalles del Producto</h1>
-        <div class="producto">
-            <img src="<?php echo $producto['imagen']; ?>" alt="<?php echo $producto['nombre']; ?>">
-            <div class="info">
-                <h2><?php echo $producto['nombre']; ?></h2>
-                <p><?php echo $producto['descripcion']; ?></p>
-                <p>Precio: $<?php echo $producto['precio']; ?></p>
-                <a href="#" class="btn-comprar">Comprar</a>
-            </div>
-        </div>
-        <a href="index.php" class="btn-volver">Volver a la página principal</a>
+        <?php
+        if ($producto !== null) {
+            echo '<h1>' . $producto->getNombre() . '</h1>';
+            echo '<p>' . $producto->getDescripcion() . '</p>';
+            echo '<p>Precio: $' . $producto->precioFormateado() . '</p>';
+            // Mostrar más detalles según sea necesario
+        } else {
+            echo '<p>Producto no encontrado</p>';
+        }
+        ?>
+        <a href="index.php">Volver a la página principal</a>
     </div>
-
 </body>
 </html>
