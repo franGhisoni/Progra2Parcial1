@@ -1,18 +1,52 @@
-<div class="container form">
-  <h2>Contacto</h2>
-  <form action="formulario.php" method="POST">
-    <div class="form-group">
-      <label for="nombre">Nombre:</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" required>
+<body class="fondo">
+
+<div class="contenedor">
+  <div class="container contact">
+      <div class="text">
+          ¡Contáctanos!
+      </div>
+      <form action="formulario.php" method="POST">
+          <div class="form-row">
+            <div class="input-data">
+                <input type="text" id="nombre" name="nombre" required autocomplete="off">
+                <div class="underline"></div>
+                <label for="nombre">Nombre:</label>
+            </div>
+            <div class="input-data">
+                <input type="text" id="apellido" name="apellido" required autocomplete="off">
+                <div class="underline"></div>
+                <label for="apellido">Apellido:</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+                <input type="email" id="email" name="email" required autocomplete="off">
+                <div class="underline"></div>
+                <label for="email">Email:</label>
+            </div>
+            <div class="input-data">
+                <input type="number" id="edad" name="edad" required autocomplete="off">
+                <div class="underline"></div>
+                <label for="edad">Edad:</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data textarea">
+                <textarea rows="8" cols="80" id="mensaje" name="mensaje" required autocomplete="off"></textarea>
+                <br />
+                <div class="underline"></div>
+                <label for="mensaje">Escríbenos tu mensaje:</label>
+                <br />
+                <div class="form-row submit-btn">
+                  <div class="input-data">
+                      <div class="inner"></div>
+                      <input type="submit" value="Enviar">
+                  </div>
+                </div>
+            </div>
+          </div>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="mensaje">Mensaje:</label>
-      <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </form>
-</div>
+  </div>
+
+</body>
