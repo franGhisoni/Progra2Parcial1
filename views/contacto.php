@@ -1,6 +1,6 @@
 <div class="container form">
   <h2>Contacto</h2>
-  <form action="views/formulario.php" method="POST">
+  <form action="formulario.php" method="POST">
     <div class="form-group">
       <label for="nombre">Nombre:</label>
       <input type="text" class="form-control" id="nombre" name="nombre" required>

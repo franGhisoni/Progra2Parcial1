@@ -195,8 +195,6 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    position: relative;
-    bottom: 0;
     margin: auto;
     background-color: #e5e5e5;
     padding: 15px 5vw 0px 5vw;
@@ -534,4 +532,10 @@ ol, ul {
     display: block;
     font-size: 14px;
     color: #464646;
+}
+
+/*--------------------------------------------------------- Contacto / Formulario ---------------------------------------------------------*/
+
+.form{
+    margin: 10rem auto;
 }
