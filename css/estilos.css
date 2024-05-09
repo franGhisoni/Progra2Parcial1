@@ -1,15 +1,29 @@
+/*--------------------------------------------------------- Home ---------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 .main{
     justify-content: center;
     display: flex;
 }
+
+/*--------------------------------------------------------- Index ---------------------------------------------------------*/
 
 .banner {
     width: 100%;
@@ -22,7 +36,6 @@
     height: auto;
     display: block;
 }
-
 
 .navbar{
     display: flex;
@@ -190,6 +203,9 @@
     padding: 20px
 }
 
+/*--------------------------------------------------------- Footer ---------------------------------------------------------*/
+
+
 .footer{
     display: flex;
     justify-content: space-around;
@@ -217,13 +233,9 @@
     text-decoration: none
 }
 
-/*--------------------------------------------------------- Seccion: Productos ---------------------------------------------------------*/
-
-.carousel{
-    margin-bottom: 5rem;
-}
 
 /*--------------------------------------------------------- Botones ---------------------------------------------------------*/
+
 
 .button-exp {
     align-items: center;
@@ -267,11 +279,11 @@
     }
   }
 
-/*--------------------------------------------------------- Otra cosa we ---------------------------------------------------------*/
 
-body {
-    font-family: "Poppins", sans-serif;
-    color: #444444;
+/*--------------------------------------------------------- Productos ---------------------------------------------------------*/
+
+.carousel{
+    margin-bottom: 5rem;
 }
 
 a,
@@ -425,8 +437,6 @@ a:hover {
     transform: translateY(-50%);
 }
 
-
-
 ul{
     margin-bottom: 0;
 }
@@ -438,8 +448,10 @@ ol, ul {
 /*--------------------------------------------------------- Alumnos / Staff ---------------------------------------------------------*/
 
 .alumnos{
-    width: 70%;
-    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
 }
 
 .our-team{
@@ -533,26 +545,7 @@ ol, ul {
     color: #464646;
 }
 
-/*--------------------------------------------------------- Contacto / Formulario ---------------------------------------------------------*/
-
-*{
-  outline: none;
-  box-sizing: border-box;
-}
-
-.fondo{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+/*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
 
 .contact{
   max-width: 800px;
@@ -574,7 +567,7 @@ ol, ul {
   -webkit-text-fill-color: transparent;
 }
 
-.social h2{
+.social h2, .form h2{
     text-align: center;
     font-size: 30px;
     font-weight: 600;
@@ -704,8 +697,10 @@ input:-webkit-autofill:active{
   z-index: 2;
 }
 
+/*--------------------------------------------------------- Formulario ---------------------------------------------------------*/
+
 .social{
-    margin: 3rem auto;
+    margin: 1rem auto;
     text-align: center;
     background: rgb(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -741,10 +736,18 @@ input:-webkit-autofill:active{
     }
 }
 
+.form{
+    max-width: 800px;
+    background: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    width: 800px;
+    height: fit-content;
+    padding: 50px;
+    font-size: 16pt;
+}
 
-
-
-/* boton cantidad de productos  */
+/*--------------------------------------------------------- Detalles ---------------------------------------------------------*/
 
 
 .quantity-selector {

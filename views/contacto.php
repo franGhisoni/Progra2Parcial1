@@ -1,11 +1,10 @@
-<body class="fondo">
+<div class="fondito">
 
-<div class="contenedor">
-  <div class="container contact">
+<div class="container contact">
       <div class="text">
           ¡Contáctanos!
       </div>
-      <form action="formulario.php" method="POST">
+      <form action="index.php?sec=formulario" method="POST">
           <div class="form-row">
             <div class="input-data">
                 <input type="text" id="nombre" name="nombre" required autocomplete="off">
@@ -46,7 +45,6 @@
             </div>
           </div>
       </form>
-    </div>
-  </div>
+</div>
 
-</body>
+</div>
