@@ -4,7 +4,7 @@
             <div class="our-team">
                 <div class="pic">
                     <img src="img/1.jpg">
-                    <ul class="social">
+                    <ul class="redes">
                         <li><a href="https://www.instagram.com/facupaez_97/" target="_blank" class="fab fa-instagram"></a></li>
                         <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=facundo.paez@davinci.edu.ar" target="_blank" class="fab fa-at"></a></li>
                     </ul>
@@ -22,7 +22,7 @@
             <div class="our-team">
                 <div class="pic">
                 <img src="img/2.jpg">
-                    <ul class="social">
+                    <ul class="redes">
                     <li><a href="https://www.instagram.com/otroalienn/" target="_blank" class="fab fa-instagram"></a></li>
                     <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=florencia.sueiro@davinci.edu.ar" target="_blank" class="fab fa-at"></a></li>
                     </ul>

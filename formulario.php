@@ -1,39 +1,3 @@
-<?php
-require_once "classes/Producto.php";
-
-$secciones_validas = [
-    "home" => [
-        "titulo" => "Inicio"
-    ],
-    "alumnos" => [
-        "titulo" => "Staff"
-    ],
-    "productos" => [
-        "titulo" => "Productos"
-    ],
-    "contacto" => [
-        "titulo" => "Contacto"
-    ],
-    "formulario" => [
-        "titulo" => "Formulario"
-    ],
-    "detalles" => [
-        "titulo" => "Detalle"
-    ]
-];
-
-$seccion = isset($_GET['sec']) ? $_GET['sec'] : 'home';
-
-if (!array_key_exists($seccion, $secciones_validas)) {
-    $vista = "404";
-    $titulo = "404: Página no encontrada";
-} else {
-    $vista = $seccion;
-    $titulo = $secciones_validas[$seccion]['titulo'];
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -52,9 +16,15 @@ if (!array_key_exists($seccion, $secciones_validas)) {
         </section>
     </main>
     <section>
-        <?php
-        require_once "views/$vista.php";
-        ?>
+    <div class="container form">
+      <h2>Resumen del Formulario</h2>
+      <p>Gracias por contactarnos. Aquí está un resumen de la información que nos has enviado:</p>
+      <ul>
+        <li><strong>Nombre:</strong> <?php echo $_POST['nombre']; ?></li>
+        <li><strong>Email:</strong> <?php echo $_POST['email']; ?></li>
+        <li><strong>Mensaje:</strong> <?php echo $_POST['mensaje']; ?></li>
+      </ul>
+    </div>
     </section>
     <section>
         <?php include_once 'views/footer.php'; ?>
