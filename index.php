@@ -13,6 +13,9 @@ $secciones_validas = [
     ],
     "contacto" => [
         "titulo" => "Contacto"
+    ],
+    "detalles" => [
+        "titulo" => "Detalle"
     ]
 ];
 
@@ -25,6 +28,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     $vista = $seccion;
     $titulo = $secciones_validas[$seccion]['titulo'];
 }
+
 ?>
 
 <!DOCTYPE html>

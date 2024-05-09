@@ -6,11 +6,13 @@ class Producto
     private $nombre;
     private $descripcion;
     private $precio;
+    private $precioAnterior;
     private $imagen;
     private $stock;
     private $categoria;
     private $piel;
     private $lanzamiento;
+    private $contenido;
 
     public function catalogoCompleto(): array
 {
