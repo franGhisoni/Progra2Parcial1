@@ -10,7 +10,8 @@
             "stock": 50,
             "categoria": "Skincare",
             "piel": ["todo tipo de piel"],
-            "lanzamiento": "2020-05-12"
+            "lanzamiento": "2020-05-12",
+            "contenido": 15
         },
         {
             "id": 2,
@@ -22,7 +23,8 @@
             "stock": 80,
             "categoria": "Skincare",
             "piel": ["piel grasa", "piel mixta"],
-            "lanzamiento": "2019-08-20"
+            "lanzamiento": "2019-08-20",
+            "contenido": 30
         },
         {
             "id": 3,
@@ -34,7 +36,8 @@
             "stock": 30,
             "categoria": "Skincare",
             "piel": ["todo tipo de piel"],
-            "lanzamiento": "2021-03-10"
+            "lanzamiento": "2021-03-10",
+            "contenido": 60
         },
         {
             "id": 4,
@@ -46,7 +49,8 @@
             "stock": 60,
             "categoria": "Skincare",
             "piel": ["piel sensible", "piel seca"],
-            "lanzamiento": "2018-12-05"
+            "lanzamiento": "2018-12-05",
+            "contenido": 60            
         },
         {
             "id": 5,
@@ -58,7 +62,8 @@
             "stock": 40,
             "categoria": "Skincare",
             "piel": ["todo tipo de piel"],
-            "lanzamiento": "2017-06-30"
+            "lanzamiento": "2017-06-30",
+            "contenido": 30
         },
         {
             "id": 6,
@@ -70,7 +75,8 @@
             "stock": 25,
             "categoria": "Skincare",
             "piel": ["todo tipo de piel"],
-            "lanzamiento": "2021-10-15"
+            "lanzamiento": "2021-10-15",
+            "contenido": 15
         },
         {
             "id": 7,
@@ -82,7 +88,8 @@
             "stock": 20,
             "categoria": "Skincare",
             "piel": ["piel seca", "piel madura"],
-            "lanzamiento": "2022-04-05"
+            "lanzamiento": "2022-04-05",
+            "contenido": 60
         }
     ],
     "makeup": [
@@ -96,7 +103,8 @@
             "stock": 70,
             "categoria": "Maquillaje",
             "tonosDisponibles": ["Natural Beige", "Light Beige"],
-            "lanzamiento": "2021-09-15"
+            "lanzamiento": "2021-09-15",
+            "contenido": 30
         },
         {
             "id": 9,
@@ -108,7 +116,8 @@
             "stock": 90,
             "categoria": "Maquillaje",
             "tonosDisponibles": ["Red Velvet", "Rose Pink"],
-            "lanzamiento": "2020-03-20"
+            "lanzamiento": "2020-03-20",
+            "contenido": 15
         },
         {
             "id": 10,
@@ -120,7 +129,8 @@
             "stock": 80,
             "categoria": "Maquillaje",
             "tonosDisponibles": ["Dark Brown", "Taupe"],
-            "lanzamiento": "2019-07-10"
+            "lanzamiento": "2019-07-10",
+            "contenido": 60
         },
         {
             "id": 11,
@@ -132,7 +142,8 @@
             "stock": 60,
             "categoria": "Maquillaje",
             "tipoPestañas": ["volumen", "longitud"],
-            "lanzamiento": "2018-11-05"
+            "lanzamiento": "2018-11-05",
+            "contenido": 30
         },
         {
             "id": 12,
@@ -144,7 +155,8 @@
             "stock": 50,
             "categoria": "Maquillaje",
             "tonosDisponibles": ["Champagne", "Rose Gold"],
-            "lanzamiento": "2022-02-28"
+            "lanzamiento": "2022-02-28",
+            "contenido": 15
         },
         {
             "id": 13,
@@ -156,7 +168,8 @@
             "stock": 70,
             "categoria": "Maquillaje",
             "tonosDisponibles": ["Nude", "Berry"],
-            "lanzamiento": "2023-01-10"
+            "lanzamiento": "2023-01-10",
+            "contenido": 60
         },
         {
             "id": 14,
@@ -168,7 +181,8 @@
             "stock": 60,
             "categoria": "Maquillaje",
             "tonosDisponibles": ["Warm Neutrals", "Smokey"],
-            "lanzamiento": "2023-07-20"
+            "lanzamiento": "2023-07-20",
+            "contenido": 30
         }
     ],
     "hair": [
@@ -182,7 +196,8 @@
             "stock": 40,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["dañado", "seco"],
-            "lanzamiento": "2020-11-10"
+            "lanzamiento": "2020-11-10",
+            "contenido": 15
         },
         {
             "id": 16,
@@ -194,7 +209,8 @@
             "stock": 60,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["rizado", "ondulado"],
-            "lanzamiento": "2019-05-25"
+            "lanzamiento": "2019-05-25",
+            "contenido": 60
         },
         {
             "id": 17,
@@ -206,7 +222,8 @@
             "stock": 80,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["todo tipo de cabello"],
-            "lanzamiento": "2018-08-15"
+            "lanzamiento": "2018-08-15",
+            "contenido": 30
         },
         {
             "id": 18,
@@ -218,7 +235,8 @@
             "stock": 50,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["todo tipo de cabello"],
-            "lanzamiento": "2021-03-30"
+            "lanzamiento": "2021-03-30",
+            "contenido": 15
         },
         {
             "id": 19,
@@ -230,7 +248,8 @@
             "stock": 30,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["cabello fino", "cabello debilitado"],
-            "lanzamiento": "2022-06-20"
+            "lanzamiento": "2022-06-20",
+            "contenido": 60
         },
         {
             "id": 20,
@@ -242,7 +261,8 @@
             "stock": 35,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["todo tipo de cabello"],
-            "lanzamiento": "2023-02-12"
+            "lanzamiento": "2023-02-12",
+            "contenido": 30
         },
         {
             "id": 21,
@@ -254,7 +274,8 @@
             "stock": 45,
             "categoria": "Cuidado del Cabello",
             "tipoCabello": ["todo tipo de cabello"],
-            "lanzamiento": "2023-09-25"
+            "lanzamiento": "2023-09-25",
+            "contenido": 15
         }
     ]
 }
