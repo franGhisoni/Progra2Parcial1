@@ -1,15 +1,20 @@
-
 <?php
 require_once 'classes/producto.php';
 
 $id = $_GET['id'] ?? FALSE;
+$filtro = $_GET['filtro'] ?? FALSE;
 
 $miProducto = new Producto();
-$productos = $miProducto->productoCompleto();
+$productos = [];
 
-
-
+if ($filtro) {
+    $productos = $miProducto->filtrarCatalogo('categoria', $filtro);
+} else {
+    $productos = $miProducto->catalogoCompleto();
+}
 ?>
+
+
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -74,9 +79,9 @@ $productos = $miProducto->productoCompleto();
                         <div id="categoriaCollapse" class="accordion-collapse collapse" aria-labelledby="categoriaHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <a href="index.php?sec=productos&filtro=skincare" class="list-group-item">Skincare</a>
-                                    <a href="index.php?sec=productos&filtro=hair" class="list-group-item">Hair</a>
-                                    <a href="index.php?sec=productos&makeup" class="list-group-item">Makeup</a>
+                                <a href="index.php?sec=productos&filtro=Skincare" class="list-group-item">Skincare</a>
+                                <a href="index.php?sec=productos&filtro=Cabello" class="list-group-item">Hair</a>
+                                <a href="index.php?sec=productos&filtro=Maquillaje" class="list-group-item">Makeup</a>
                                 </ul>
                             </div>
                         </div>
@@ -90,9 +95,9 @@ $productos = $miProducto->productoCompleto();
                         <div id="ofertasCollapse" class="accordion-collapse collapse" aria-labelledby="ofertasHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <a href="index.php?>" class="list-group-item">Hasta 15%</a>
-                                    <a href="index.php?>" class="list-group-item">Hasta 20%</a>
-                                    <a href="index.php?>" class="list-group-item">Hasta 40%</a>
+                                    <a href="index.php?sec=productos&filtro=15" class="list-group-item">Hasta 15%</a>
+                                    <a href="index.php?sec=productos&filtro=20" class="list-group-item">Hasta 20%</a>
+                                    <a href="index.php?sec=productos&filtro=40" class="list-group-item">Hasta 40%</a>
                                 </ul>
                             </div>
                         </div>
