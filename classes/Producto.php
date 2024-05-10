@@ -14,9 +14,9 @@ class Producto
     private $lanzamiento;
     private $contenido;
 
-    public function catalogoCompleto(): array
+    public function productoCompleto(): array
 {
-    $catalogo = [];
+    $producto = [];
 
     $JSON = file_get_contents('datos/productos.json');
     $JSONData = json_decode($JSON);
@@ -29,38 +29,42 @@ class Producto
             $producto->nombre = $value->nombre;
             $producto->descripcion = $value->descripcion;
             $producto->precio = $value->precio;
+            $producto->precioAnterior = $value->precioAnterior;
             $producto->imagen = $value->imagen;
             $producto->stock = $value->stock;
             $producto->categoria = $value->categoria;
+            $producto->piel = $value->piel;
+            $producto->lanzamiento = $value->lanzamiento;
+            $producto->contenido = $value->contenido;
             
             if (isset($value->piel)) {
                 $producto->piel = $value->piel;
             } else {
                 $producto->piel = "No especificado";
             }
-    
+
             $producto->lanzamiento = $value->lanzamiento;
     
-            $catalogo[] = $producto;
+            $producto[] = $producto;
         }
-    }        
+    }
 
-    return $catalogo;
+    return $producto;
 }
 
 
-    /**
-     * Devuelve el catalogo de productos de un nombre en particular
+    /*
+     * Devuelve el producto de productos de un nombre en particular
      * @param string $nombre Un string con el nombre del nombre a buscar
      * @return producto[] Un Array lleno de instancias de objeto producto.
      */
-    public function catalogoPorNombre(string $nombre): array
+    public function productoPorCategoría(string $categoria): array
     {
         $resultado = [];
-        $catalogo = $this->catalogoCompleto();
+        $producto = $this->productoCompleto();
 
-        foreach ($catalogo as $p) {
-            if ($p->nombre == $nombre) {
+        foreach ($producto as $p) {
+            if ($p->categoria == $categoria) {
                 $resultado[] = $p;
             }
         }
@@ -73,9 +77,9 @@ class Producto
      */
     public function productoPorId(int $idProducto): ?Producto
     {
-        $catalogo = $this->catalogoCompleto();
+        $producto = $this->productoCompleto();
 
-        foreach ($catalogo as $p) {
+        foreach ($producto as $p) {
             if ($p->id == $idProducto) {
                 return $p;
             }
@@ -84,10 +88,10 @@ class Producto
     }
 
 
-    public function precioAnterior($catalogo, $precio, $descuento): array
+    public function precioAnterior($producto, $precio, $descuento): array
     {
         $resultado = [];
-        foreach ($catalogo as $p) {
+        foreach ($producto as $p) {
             $precioAnterior = $p->precio + ($p->precio * $descuento / 100);
             if ($precioAnterior == $precio) {
                 $resultado[] = $p;

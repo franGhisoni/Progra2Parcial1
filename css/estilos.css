@@ -286,15 +286,20 @@ body {
     margin-bottom: 5rem;
 }
 
+
+.carousel-item{
+    height: 100vh!important
+}
+
 a,
 a:hover {
     text-decoration: none;
     color: white;
 }
 
-.sectionProducts {
+/* .sectionProducts {
     padding: 80px 0 54px;
-}
+} */
 
 .sectionProducts .header {
     margin-bottom: 50px;
@@ -324,7 +329,7 @@ a:hover {
     overflow: hidden;
 }
 
-.sectionProducts .single-product .part-1::before {
+.sectionProducts .single-product .img::before {
 		position: absolute;
 		content: "";
 		top: 0;
@@ -335,24 +340,14 @@ a:hover {
 		transition: all 0.3s;
 }
 
-.sectionProducts .single-product:hover .part-1::before {
+.single-product:hover .img::before {
 		transform: scale(1.2,1.2) rotate(5deg);
 }
 
 .sectionProducts #product-1 .part-1::before {
-    background: url("../img/img\ cuadrada\ 1.jpg") no-repeat center;
+    /* background: url("../img/img\ cuadrada\ 1.jpg") no-repeat center; */
     background-size: cover;
-		transition: all 0.3s;
-}
-
-.sectionProducts #product-2 .part-1::before {
-    background: url("../img/img\ cuadrada\ 2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.sectionProducts #product-3 .part-1::before {
-    background: url("../img/img\ cuadrada\ 3.jpg") no-repeat center;
-    background-size: cover;
+	transition: all 0.3s;
 }
 
 .sectionProducts .single-product .part-1 .discount,
@@ -424,6 +419,14 @@ a:hover {
     padding: 0 7px;
     margin-right: 2px;
     opacity: 0.6;
+}
+
+.product-description {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: gray;
 }
 
 .sectionProducts .single-product .part-2 .product-old-price::after {

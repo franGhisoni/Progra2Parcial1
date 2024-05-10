@@ -5,19 +5,9 @@ require_once 'classes/producto.php';
 $id = $_GET['id'] ?? FALSE;
 
 $miProducto = new Producto();
-$productos = $miProducto->catalogoCompleto();
+$productos = $miProducto->productoCompleto();
 
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $tipoPiel = $_GET['tipoPiel'] ?? '';
-    $categoria = $_GET['categoria'] ?? '';
-    $oferta = $_GET['oferta'] ?? '';
-
-    // Aquí puedes agregar la lógica para filtrar los productos según los parámetros recibidos
-    // Por ejemplo, podrías usar los métodos catalogoPorTipoPiel(), catalogoPorCategoria(), catalogoPorOferta() definidos en tu clase Producto
-    // y luego combinar los resultados según los filtros seleccionados
-
-}
 
 ?>
 
@@ -29,21 +19,21 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" class="d-block w-100" alt="...">
+            <img src="img/Productos-4.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" class="d-block w-100" alt="...">
+            <img src="img/Productos-3.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" class="d-block w-100" alt="...">
+            <img src="img/Productos-2.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -61,55 +51,54 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="ingredientesHeading">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesCollapse" aria-expanded="true" aria-controls="ingredientesCollapse">
-                                Tipo de piel
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesCollapse" aria-expanded="true" aria-controls="ingredientesCollapse"> Tipo de piel
                             </button>
                         </h2>
                         <div id="ingredientesCollapse" class="accordion-collapse collapse show" aria-labelledby="ingredientesHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item">Todo tipo</li>
-                                    <li class="list-group-item">Piel grasa</li>
-                                    <li class="list-group-item">Piel mixta</li>
+                                    <a href="index.php?sec=productos&filtro=todo-tipo" class="list-group-item">Todo tipo</a>
+                                    <a href="index.php?sec=productos&filtro=piel-grasa" class="list-group-item">Piel grasa</a>
+                                    <a href="index.php?sec=productos&filtro=piel-mixta" class="list-group-item">Piel mixta</a>
+                                    <a href="index.php?sec=productos&filtro=piel-seca" class="list-group-item">Piel seca</a>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="usosHeading">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#usosCollapse" aria-expanded="false" aria-controls="usosCollapse">
+                        <h2 class="accordion-header" id="categoriaHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#categoriaCollapse" aria-expanded="false" aria-controls="categoriaCollapse">
                                 Categoría
                             </button>
                         </h2>
-                        <div id="usosCollapse" class="accordion-collapse collapse" aria-labelledby="usosHeading" data-bs-parent="#accordionExample">
+                        <div id="categoriaCollapse" class="accordion-collapse collapse" aria-labelledby="categoriaHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item">Skincare</li>
-                                    <li class="list-group-item">Hair</li>
-                                    <li class="list-group-item">Makeup</li>
+                                    <a href="index.php?sec=productos&filtro=skincare" class="list-group-item">Skincare</a>
+                                    <a href="index.php?sec=productos&filtro=hair" class="list-group-item">Hair</a>
+                                    <a href="index.php?sec=productos&makeup" class="list-group-item">Makeup</a>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="usosHeading">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#usosCollapse" aria-expanded="false" aria-controls="usosCollapse">
+                        <h2 class="accordion-header" id="ofertasHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#ofertasCollapse" aria-expanded="false" aria-controls="ofertasCollapse">
                                 Ofertas
                             </button>
                         </h2>
-                        <div id="usosCollapse" class="accordion-collapse collapse" aria-labelledby="usosHeading" data-bs-parent="#accordionExample">
+                        <div id="ofertasCollapse" class="accordion-collapse collapse" aria-labelledby="ofertasHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <li class="list-group-item">Hasta 15%</li>
-                                    <li class="list-group-item">Hasta 20%</li>
-                                    <li class="list-group-item">Hasta 40%</li>
+                                    <a href="index.php?>" class="list-group-item">Hasta 15%</a>
+                                    <a href="index.php?>" class="list-group-item">Hasta 20%</a>
+                                    <a href="index.php?>" class="list-group-item">Hasta 40%</a>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
         <div class="col-md-9">
@@ -122,6 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                         <div class="col-md-6 col-lg-4 col-xl-4 col-sm-12">
                             <div id="product-1" class="single-product">
                                 <div class="part-1">
+                                    <img class="part-1 img" src="./img/<?= $producto->getImagen() ?>" alt="">
                                     <ul>
                                         <li><a href="#">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
@@ -142,10 +132,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                                             </a></li>
                                     </ul>
                                 </div>
-                                <img src="<?= $producto->getImagen() ?>" class="card-img-top" alt="<?= $producto->getNombre() ?>">
                                 <div class="part-2">
                                     <h5 class="product-title"><?= $producto->getNombre() ?></h5>
-                                    <p class="product-old-price"><?= $producto->getDescripcion() ?></p>
+                                    <p class="product-description"><?= $producto->getDescripcion() ?></p>
                                     <h4 class="product-old-price">$<?= $producto->precioFormateado() ?></h4>
                                     <h4 class="product-price">$<?= $producto->precioFormateado() ?></h4>
                                 </div>
