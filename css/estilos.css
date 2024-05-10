@@ -1,4 +1,4 @@
-/*--------------------------------------------------------- Home ---------------------------------------------------------*/
+/*--------------------------------------------------------- Index ---------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
@@ -23,7 +23,7 @@ body {
     display: flex;
 }
 
-/*--------------------------------------------------------- Index ---------------------------------------------------------*/
+/*--------------------------------------------------------- Home ---------------------------------------------------------*/
 
 .banner {
     width: 100%;
@@ -312,6 +312,14 @@ body {
     height: 100vh!important
 }
 
+.carousel-item img {
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+
 a,
 a:hover {
     text-decoration: none;
@@ -350,6 +358,23 @@ a:hover {
     overflow: hidden;
 }
 
+.sectionProducts .single-product .part-1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+
+.sectionProducts .single-product:hover .part-1 .overlay {
+    opacity: 1;
+}
+
 .sectionProducts .single-product .img::before {
 		position: absolute;
 		content: "";
@@ -361,8 +386,12 @@ a:hover {
 		transition: all 0.3s;
 }
 
-.single-product:hover .img::before {
-		transform: scale(1.2,1.2) rotate(5deg);
+.sectionProducts .single-product .part-1 img {
+    transition: transform 0.3s ease;
+}
+
+.sectionProducts .single-product:hover .part-1 img {
+    transform: scale(1.1) rotate(5deg);
 }
 
 .sectionProducts #product-1 .part-1::before {
@@ -397,6 +426,7 @@ a:hover {
     list-style: none;
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s;
+    z-index: 2;
 }
 
 .sectionProducts .single-product:hover .part-1 ul {
@@ -467,6 +497,23 @@ ul{
 
 ol, ul {
     padding-left: 0;
+}
+
+.accordion {
+    margin: 1rem auto;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #546348;
+    color: white;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.list-group-item:hover {
+    background-color: #91aa7c;
 }
 
 /*--------------------------------------------------------- Alumnos / Staff ---------------------------------------------------------*/

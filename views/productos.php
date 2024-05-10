@@ -56,10 +56,10 @@ if ($filtro) {
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="ingredientesHeading">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesCollapse" aria-expanded="true" aria-controls="ingredientesCollapse"> Tipo de piel
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ingredientesCollapse" aria-expanded="false" aria-controls="ingredientesCollapse"> Tipo de piel
                             </button>
                         </h2>
-                        <div id="ingredientesCollapse" class="accordion-collapse collapse show" aria-labelledby="ingredientesHeading" data-bs-parent="#accordionExample">
+                        <div id="ingredientesCollapse" class="accordion-collapse collapse" aria-labelledby="ingredientesHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
                                     <a href="index.php?sec=productos&filtro=todo-tipo" class="list-group-item">Todo tipo</a>
@@ -116,6 +116,7 @@ if ($filtro) {
                         <div class="col-md-6 col-lg-4 col-xl-4 col-sm-12">
                             <div id="product-1" class="single-product">
                                 <div class="part-1">
+                                    <div class="overlay"></div>
                                     <img class="part-1 img" src="./img/<?= $producto->getImagen() ?>" alt="">
                                     <ul>
                                         <li><a href="#">
