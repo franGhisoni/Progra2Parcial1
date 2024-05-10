@@ -1,10 +1,16 @@
-<div class="banner">
+        <div class="banner">
             <img class="background" src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" alt="">
             <div class="info">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
-                <button class="button-exp" role="button">EXPLORE</button>
-        
+                <p class="hidden-text" style="display: none;">¡Descubre nuestros productos más populares y encuentra tu mejor versión!</p>
+                <div class="botones">  
+                    <button class="cta read-more-btn">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                        <span class="button-text">Leer más</span>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -43,7 +49,14 @@
             <div class="infoAbout">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
-                <p><button class="button-exp" role="button">EXPLORE</button></p>
+                <p class="hidden-text" style="display: none;">Conoce más sobre nuestra filosofía y compromiso con la belleza natural.</p>
+                <div class="botones">  
+                    <button class="cta read-more-btn">
+                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-minus" style="display: none;"></i>
+                        <span class="button-text">Leer más</span>
+                    </button>
+                </div>
             </div>
             <div class="imagen">
                 <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="">
@@ -173,7 +186,14 @@
                 <div class="textGuide">
                     <h2>Guía de Prueba de Parches</h2>
                     <p>Las pruebas de parche son una herramienta sencilla para prever reacciones negativas iniciales a un producto nuevo. Se recomienda realizar una prueba de parche antes de usar un producto por primera vez en tu rutina.</p>
-                    <button class="button-exp" role="button">EXPLORE</button>
+                    <p class="hidden-text" style="display: none;">Aprende cómo realizar una prueba de parche correctamente y protege tu piel.</p>
+                    <div class="botones">  
+                        <button class="cta read-more-btn">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus" style="display: none;"></i>
+                            <span class="button-text">Leer más</span>
+                        </button>
+                    </div>
                 </div>
             </div>
     </section>
