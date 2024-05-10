@@ -1,11 +1,8 @@
-<body class="fondo">
-
-<div class="contenedor">
-  <div class="container contact">
+<div class="container contact">
       <div class="text">
           ¡Contáctanos!
       </div>
-      <form action="formulario.php" method="POST">
+      <form action="index.php?sec=formulario" method="POST">
           <div class="form-row">
             <div class="input-data">
                 <input type="text" id="nombre" name="nombre" required autocomplete="off">
@@ -32,7 +29,7 @@
           </div>
           <div class="form-row">
             <div class="input-data textarea">
-                <textarea rows="8" cols="80" id="mensaje" name="mensaje" required autocomplete="off"></textarea>
+                <textarea rows="8" cols="80" id="mensaje" name="mensaje" required autocomplete="off" maxlength="200"></textarea>
                 <br />
                 <div class="underline"></div>
                 <label for="mensaje">Escríbenos tu mensaje:</label>
@@ -46,7 +43,4 @@
             </div>
           </div>
       </form>
-    </div>
-  </div>
-
-</body>
+</div>
