@@ -83,6 +83,21 @@ class Producto
         return null;
     }
 
+
+    public function precioAnterior($catalogo, $precio, $descuento): array
+    {
+        $resultado = [];
+        foreach ($catalogo as $p) {
+            $precioAnterior = $p->precio + ($p->precio * $descuento / 100);
+            if ($precioAnterior == $precio) {
+                $resultado[] = $p;
+            }
+        }
+        return $resultado;
+    }
+    
+
+
     /**
      * Devuelve el precio de la unidad, formateado correctamente
      */

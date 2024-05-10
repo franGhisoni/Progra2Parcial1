@@ -4,10 +4,8 @@ $id = $_GET['id'] ?? FALSE;
 $miObjetoProducto = new Producto();
 $producto = $miObjetoProducto->productoPorId($id);
 
-
 ?>
 <div class="container">
-
     <div class="row">
         <?PHP if (!empty($producto)) { ?>
             <div class="col">
