@@ -1,5 +1,3 @@
-<div class="fondito">
-
 <div class="container contact">
       <div class="text">
           ¡Contáctanos!
@@ -45,6 +43,4 @@
             </div>
           </div>
       </form>
-</div>
-
 </div>

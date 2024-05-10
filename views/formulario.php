@@ -1,6 +1,5 @@
-<div class="fondo">
-    
-    <div class="container form">
+
+      <div class="container form">
           <h2>Resumen del Formulario</h2>
           <p>Gracias por contactarnos. Aquí está un resumen de la información que nos has enviado:</p>
           <ul>
@@ -21,5 +20,3 @@
           <a href="https://www.instagram.com" target="_blank" class="fab fa-whatsapp"></a>
         </div>
     </div>
-
-    </div> 

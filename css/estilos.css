@@ -547,6 +547,15 @@ ol, ul {
 
 /*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
 
+.body-contacto, .body-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+
 .contact{
   max-width: 800px;
   background: rgb(255, 255, 255, 0.6);
@@ -744,7 +753,7 @@ input:-webkit-autofill:active{
     width: 800px;
     height: fit-content;
     padding: 50px;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 /*--------------------------------------------------------- Detalles ---------------------------------------------------------*/
