@@ -63,5 +63,31 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreBtns = document.querySelectorAll('.read-more-btn');
+            
+            readMoreBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const hiddenText = this.parentNode.previousElementSibling;
+                    const iconPlus = this.querySelector('.fa-plus');
+                    const iconMinus = this.querySelector('.fa-minus');
+                    if (hiddenText.style.display === 'none') {
+                        hiddenText.style.display = 'block';
+                        iconPlus.style.display = 'none';
+                        iconMinus.style.display = 'inline-block';
+                        this.querySelector('.button-text').textContent = 'Leer menos';
+                    } else {
+                        hiddenText.style.display = 'none';
+                        iconPlus.style.display = 'inline-block';
+                        iconMinus.style.display = 'none';
+                        this.querySelector('.button-text').textContent = 'Leer más';
+                    }
+                });
+            });
+        });
+    </script>
+
+
 </body>
 </html>
