@@ -29,7 +29,7 @@
           </div>
           <div class="form-row">
             <div class="input-data textarea">
-                <textarea rows="8" cols="80" id="mensaje" name="mensaje" required autocomplete="off"></textarea>
+                <textarea rows="8" cols="80" id="mensaje" name="mensaje" required autocomplete="off" maxlength="200"></textarea>
                 <br />
                 <div class="underline"></div>
                 <label for="mensaje">Escríbenos tu mensaje:</label>
