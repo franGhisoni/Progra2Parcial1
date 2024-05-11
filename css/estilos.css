@@ -262,6 +262,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .footerUl li{
@@ -278,7 +279,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    .footerLogo, .footerUl, div {
+    .footerLogo, .footerUl {
         margin-bottom: 10px;
     }
 }
@@ -683,7 +684,7 @@ ol, ul {
     }
 
     .our-team .team-info{
-        bottom: -5px;
+        bottom: 10px;
     }
 }
 
