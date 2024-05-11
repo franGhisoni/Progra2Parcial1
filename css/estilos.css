@@ -48,6 +48,26 @@ body {
     backdrop-filter: blur(20px);
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 3;
+    background-color: rgba(79, 79, 79, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+
+.logo{
+    display: flex;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
 .navbar-collapse ul{
     display: inline-flex;
     margin: auto;
@@ -688,6 +708,8 @@ ol, ul {
   max-height: 700px;
   padding: 25px 40px 10px 40px;
 }
+
+
 
 .container .text{
   text-align: center;
