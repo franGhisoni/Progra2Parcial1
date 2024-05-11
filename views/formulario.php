@@ -15,8 +15,8 @@
       <h2>¡Encontranos en nuestras redes sociales!</h2>
         <div class="socialmedia">
           <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
-          <a href="https://www.instagram.com" target="_blank" class="fab fa-facebook"></a>
-          <a href="https://www.instagram.com" target="_blank" class="fab fa-twitter"></a>
-          <a href="https://www.instagram.com" target="_blank" class="fab fa-whatsapp"></a>
+          <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
+          <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+          <a href="https://www.web.whatsapp.com" target="_blank" class="fab fa-whatsapp"></a>
         </div>
     </div>

@@ -29,18 +29,13 @@
           </div>
           <div class="form-row">
             <div class="input-data textarea">
-                <textarea rows="8" cols="80" id="mensaje" name="mensaje" required autocomplete="off" maxlength="200"></textarea>
-                <br />
+                <textarea id="mensaje" name="mensaje" required autocomplete="off" maxlength="200"></textarea>
                 <div class="underline"></div>
                 <label for="mensaje">Escríbenos tu mensaje:</label>
-                <br />
-                <div class="form-row submit-btn">
-                  <div class="input-data">
-                      <div class="inner"></div>
-                      <input type="submit" value="Enviar">
-                  </div>
                 </div>
             </div>
-          </div>
+            <div class="boton">
+                <button class="button" type="submit">Enviar</button>
+            </div>
       </form>
 </div>

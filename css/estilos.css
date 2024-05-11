@@ -348,7 +348,7 @@ body {
 
 
 .carousel-item{
-    height: 100vh!important
+    height: 100vh;
 }
 
 .carousel-item img {
@@ -691,70 +691,42 @@ ol, ul {
 /*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
 
 .body-contacto, .body-formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contact{
-  max-width: 800px;
+  width: 600px;
   background: rgb(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  width: 800px;
-  height: 700px;
-  max-height: 700px;
-  padding: 25px 40px 10px 40px;
+  padding: 25px;
+  margin: 3rem auto;
+  border-radius: 10px;
 }
-
-
 
 .container .text{
   text-align: center;
-  font-size: 41px;
+  font-size: 40px;
   font-weight: 600;
   background-color: #546348;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.social h2, .form h2{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    background-color: #546348;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 3rem;
-  }
-
-.container form{
-  padding: 30px 0 0 0;
-}
-
-.container form .form-row{
-    display: block;
-}
-
 form .form-row .input-data{
-  width: 100%;
-  height: 40px;
-  margin: 2rem 20px;
-  position: relative;
-}
-
-form .form-row .textarea{
-  margin-top: 4rem;
+    width: 100%;
+    height: 40px;
+    margin: 2rem auto;
+    position: relative;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
 .input-data input,
@@ -763,7 +735,7 @@ input:-webkit-autofill:active{
   width: 100%;
   height: 100%;
   border: none;
-  font-size: 17px;
+  font-size: 16px;
   border-bottom: 2px solid rgba(0,0,0, 0.12);
   background-color: transparent;
 }
@@ -790,7 +762,7 @@ input:-webkit-autofill:active{
 
 .textarea label{
   width: 100%;
-  bottom: 30px;
+  bottom: 20px;
   background-color: transparent;
 }
 
@@ -819,69 +791,78 @@ input:-webkit-autofill:active{
   transform: scale(1);
 }
 
-.submit-btn .input-data{
-  overflow: hidden;
-  height: 45px!important;
-  width: 25%!important;
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.submit-btn .input-data .inner{
-  height: 100%;
-  width: 300%;
-  position: absolute;
-  left: -100%;
-  background: -webkit-linear-gradient(right, #91aa7c, #546348, #91aa7c, #546348);
-  transition: all 0.4s;
-}
-
-.submit-btn .input-data:hover .inner{
-  left: 0;
-}
-
-.submit-btn .input-data input{
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
-@media only screen and (max-width: 768px) {
-    .contact {
-      width: 90%;
-      max-width: 90%;
-      height: auto;
-      padding: 25px 20px 10px 20px;
-    }
-  
-    .container .text {
-      font-size: 32px;
-    }
-  
-    .input-data,
-    .textarea {
-      margin: 1rem 0;
-    }
-  
-    .submit-btn .input-data {
-      width: 100%!important;
-    }
+.button {
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 20px;
+    letter-spacing: 4px;
+    position: relative;
+    background-color: #546348;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #303829;
+    border-radius: 10px;
   }
   
-  @media only screen and (max-width: 480px) {
-    .container .text {
-      font-size: 24px;
-    }
+  .button:hover {
+    background: #91aa7c;
+    color: #000;
+  }
   
-    .input-data,
-    .textarea {
-      margin: 0.5rem 0;
+  .button:after {
+    content: "";
+    background: #3b4634;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .button:focus { outline:0; }
+
+  @media (max-width: 576px) {
+
+    .body-contacto, .body-formulario {
+        background-image: url(../img/fondo2.jpg);
+        background-size: auto;
     }
+
+    .contact{
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+
+    .button {
+        font-size: 15px;
+        width: 80%;
+      }
   }
   
 
@@ -893,8 +874,9 @@ input:-webkit-autofill:active{
     background: rgb(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    width: 800px;
-    padding: 3rem;
+    width: 600px;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .socialmedia{
@@ -906,6 +888,16 @@ input:-webkit-autofill:active{
     padding: 1rem;
     border-radius: 5px;
 }
+
+.social h2, .form h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #546348;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
 
 .socialmedia:has(a:hover) a:not(:hover){
     scale: 0.8;
@@ -925,15 +917,50 @@ input:-webkit-autofill:active{
 }
 
 .form{
-    max-width: 800px;
+    width: 600px;
     background: rgb(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    width: 800px;
-    height: fit-content;
-    padding: 50px;
+    padding: 25px;
+    margin: 3rem auto;
+    border-radius: 10px;
     font-size: 12pt;
 }
+
+.form ul{
+    list-style-type: none;
+}
+
+@media (max-width: 1024px) {
+    .form, .social{
+        width: 90%;
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .form{
+        margin-top: 5rem;
+    }
+
+    .form, .social{
+        padding: 1rem;
+        font-size: 12pt;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+    .socialmedia{
+        column-gap: 2.5rem;
+    }
+
+    .socialmedia a{
+        font-size: 30pt;
+    }
+  }
 
 /*--------------------------------------------------------- Detalles ---------------------------------------------------------*/
 
