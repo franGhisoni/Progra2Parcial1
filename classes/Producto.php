@@ -50,14 +50,7 @@ class Producto
     
         return $catalogo;
     }
-    
 
-
-    /**
-     * Devuelve el catalogo de productos de un nombre en particular
-     * @param string $nombre Un string con el nombre del nombre a buscar
-     * @return producto[] Un Array lleno de instancias de objeto producto.
-     */
     public function catalogoPorCategoria(string $categoria): array
     {
         $resultado = [];
@@ -85,16 +78,27 @@ class Producto
     }
     
 
+    public function catalogoDestacado(bool $productoDestacado): array
+    {
+        $resultado = [];
+        $catalogo = $this->catalogoCompleto();
+    
+        foreach ($catalogo as $p) {
+            if ($p->getDestacado() == $productoDestacado) {
+                $resultado[] = $p;
+            }
+        }
+        return $resultado;
+    }
+
     public function catalogoPorPiel(string $piel): array
     {
         $resultado = [];
         $catalogo = $this->catalogoCompleto();
         
         foreach ($catalogo as $producto) {
-            // Obtener todos los tipos de piel del producto
             $tiposDePiel = $producto->getPiel();
             
-            // Verificar si el tipo de piel proporcionado está presente en los tipos de piel del producto
             if (in_array($piel, $tiposDePiel)) {
                 $resultado[] = $producto;
             }
@@ -102,7 +106,6 @@ class Producto
         
         return $resultado;
     }
-    
 
 
     
@@ -205,6 +208,11 @@ class Producto
     }
 
     public function gatVegano()
+    {
+        return $this->vegano;
+    }
+
+    public function getDestacado()
     {
         return $this->vegano;
     }
