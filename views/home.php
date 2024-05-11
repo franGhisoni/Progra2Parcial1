@@ -1,5 +1,5 @@
         <div class="banner">
-            <img class="background" src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" alt="">
+            <img class="background" src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" alt="imagen banner 1">
             <div class="info">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
@@ -20,25 +20,25 @@
             <div class="catGrid">
                 <div class="card text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Skincare">
-                        <img src="img/img cuadrada 1.jpg" class="card-img" alt="...">
+                        <img src="img/img cuadrada 1.jpg" class="card-img" alt="imagen de productos para skincare">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Skincare</h5>
+                            <h3 class="card-title">Skincare</h3>
                         </div>
                     </a>
                 </div>
                 <div class="card text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Maquillaje">
-                        <img src="img/img cuadrada 2.jpg" class="card-img" alt="...">
+                        <img src="img/img cuadrada 2.jpg" class="card-img" alt="imagen de productos para maquillarse">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Makeup</h5>
+                            <h3 class="card-title">Makeup</h3>
                         </div>
                     </a>
                 </div>
                 <div class="card text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Cabello">
-                        <img src="img/img cuadrada 3.jpg" class="card-img" alt="...">
+                        <img src="img/img cuadrada 3.jpg" class="card-img" alt="imagen de productos para el cabello">
                         <div class="card-img-overlay">
-                            <h5 class="card-title">Hair</h5>
+                            <h3 class="card-title">Hair</h3>
                         </div>
                     </a>
                 </div>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="imagen">
-                <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="">
+                <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="imagen promocional para informacion">
             </div>
         </div>
         <div class="section3">
@@ -68,7 +68,7 @@
                 <p>Por eso, nos enorgullece decir que la composición de nuestros productos es completamente segura y suave para todo tipo de piel.</p>
             </div>
             <div class="section3img">
-                <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="">
+                <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="imagen promocional para informacion">
             </div>
             <div class="frase">
                 <p>Priorizamos un enfoque personalizado para el cuidado de la piel, ofreciendo productos eficaces adaptados a sus necesidades únicas. Valoramos profundamente a nuestros clientes, los mantenemos informados sobre nuevos productos y los deleitamos con obsequios ocasionales.</p>
@@ -81,7 +81,6 @@
                     <section class="sectionProducts">
                         <div class="container">
                                 <div class="row">
-                                        <!-- Single Product -->
                                         <div class="col-md-6 col-lg-4 col-xl-4">
                                             <div id="product-1" class="single-product">
                                                 <div class="part-1">
@@ -112,7 +111,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Single Product -->
                                         <div class="col-md-6 col-lg-4 col-xl-4">
                                             <div id="product-1" class="single-product">
                                                 <div class="part-1">
@@ -143,7 +141,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Single Product -->
                                         <div class="col-md-6 col-lg-4 col-xl-4">
                                             <div id="product-1" class="single-product">
                                                 <div class="part-1">
@@ -181,7 +178,7 @@
             </div>
             <div class="guide">
                 <div>
-                    <img class="imgGuide" src="img/img cuadrada 1.jpg" alt="">
+                    <img class="imgGuide" src="img/img cuadrada 1.jpg" alt="imagen promocional para informacion">
                 </div>
                 <div class="textGuide">
                     <h2>Guía de Prueba de Parches</h2>

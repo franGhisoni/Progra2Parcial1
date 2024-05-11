@@ -1,7 +1,7 @@
 <div class="container contact">
-      <div class="text">
+      <h2 class="text">
           ¡Contáctanos!
-      </div>
+      </h2>
       <form action="index.php?sec=formulario" method="POST">
           <div class="form-row">
             <div class="input-data">
