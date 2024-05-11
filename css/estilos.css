@@ -1143,6 +1143,12 @@ input:-webkit-autofill:active{
     }
 }
 
+@media (max-width: 768px) {
+    .form, .social{
+        font-size: 14pt;
+    }
+}
+
 @media (max-width: 576px) {
 
     .form{
