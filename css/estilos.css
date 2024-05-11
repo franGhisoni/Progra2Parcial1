@@ -653,7 +653,7 @@ ol, ul {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .our-team .title {
         font-size: 20px;
     }
@@ -663,7 +663,7 @@ ol, ul {
     }
 
     .our-team .team-info{
-        bottom: 10px;
+        bottom: -5px;
     }
 }
 
@@ -827,6 +827,40 @@ input:-webkit-autofill:active{
   position: relative;
   z-index: 2;
 }
+
+@media only screen and (max-width: 768px) {
+    .contact {
+      width: 90%;
+      max-width: 90%;
+      height: auto;
+      padding: 25px 20px 10px 20px;
+    }
+  
+    .container .text {
+      font-size: 32px;
+    }
+  
+    .input-data,
+    .textarea {
+      margin: 1rem 0;
+    }
+  
+    .submit-btn .input-data {
+      width: 100%!important;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container .text {
+      font-size: 24px;
+    }
+  
+    .input-data,
+    .textarea {
+      margin: 0.5rem 0;
+    }
+  }
+  
 
 /*--------------------------------------------------------- Formulario ---------------------------------------------------------*/
 

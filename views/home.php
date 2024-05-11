@@ -19,7 +19,7 @@
             <h2>Categorias</h2>
             <div class="catGrid">
                 <div class="card text-bg-dark">
-                    <a href="pagina1.php">
+                    <a href="index.php?sec=productos&filtro=Skincare">
                         <img src="img/img cuadrada 1.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Skincare</h5>
@@ -27,7 +27,7 @@
                     </a>
                 </div>
                 <div class="card text-bg-dark">
-                    <a href="pagina2.php">
+                    <a href="index.php?sec=productos&filtro=Maquillaje">
                         <img src="img/img cuadrada 2.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Makeup</h5>
@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <div class="card text-bg-dark">
-                    <a href="pagina3.php">
+                    <a href="index.php?sec=productos&filtro=Cabello">
                         <img src="img/img cuadrada 3.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">Hair</h5>
