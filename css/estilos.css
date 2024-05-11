@@ -256,6 +256,87 @@ body {
     padding: 20px
 }
 
+@media screen and (max-width: 991px) {
+    .info {
+        width: 70%;
+        left: 40%;
+    }
+
+    .catGrid {
+        display: block;
+    }
+
+    .catGrid .card{
+        width: 75%;
+        margin: 1rem auto;
+    }
+
+    .about {
+        gap: 2rem;
+        display: flex;
+    }
+
+
+    .imagen img{
+        object-fit: cover;
+        height: 400px;
+        width: 100%;
+    }
+    
+    .infoAbout{
+        width: 50%;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .Contenido {
+        margin: 50px;
+    }
+
+    .info{
+        width: 85%;
+        left: 50%;
+        top: 60%;
+    }
+
+    .about{
+        display: block;
+    }
+
+    .about .infoAbout, .about .imagen{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .infoSec3 {
+        display: block;
+    }
+
+    .guide {
+        display: block;
+    }
+
+    .imgGuide {
+        max-width: 50vw;
+        margin: auto;
+        display: flex;
+    }
+
+    .textGuide {
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .info{
+        position: static;
+        transform: none;
+        margin: 1rem auto;
+    }
+}
+
 /*--------------------------------------------------------- Footer ---------------------------------------------------------*/
 
 
