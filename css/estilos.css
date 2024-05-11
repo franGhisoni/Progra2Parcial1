@@ -90,6 +90,40 @@ body {
     color: white;
 }
 
+@media screen and (max-width: 991px) {
+
+    .navbar {
+        display: flex;
+      }
+    
+      .navbar-collapse {
+        order: 2; 
+      }
+    
+      .shop {
+        order: 1; 
+      }
+
+      .navbar-nav li {
+        text-align: left;
+        margin-left: calc(5vw - 10px)
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .background{
+        width: auto;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
 
 /*--------------------------------------------------------- Home ---------------------------------------------------------*/
 
@@ -156,13 +190,16 @@ body {
 }
 
 .about{
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin: 6rem auto;
+    gap: 1rem;
 }
+
 .imagen img{
     width: 40vw;
+    border-radius: 10px;
 }
 
 .infoAbout{
@@ -191,6 +228,7 @@ body {
     max-width: 100%;
     height: auto;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 .infoSec3 p{
@@ -207,7 +245,7 @@ body {
 }
 
 .destacados{
-    margin-top: 150px;
+    margin: 6rem auto;
 }
 
 .guide{
@@ -220,6 +258,7 @@ body {
 
 .imgGuide{
     max-width: 40vw;
+    border-radius: 10px;
 }
 
 .textGuide{
@@ -237,21 +276,6 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-
-    .navbar {
-        display: flex;
-      }
-    
-      .navbar-collapse {
-        order: 2; 
-      }
-    
-      .shop {
-        order: 1; 
-      }
-
-
-
     .info {
         width: 70%;
         left: 40%;
@@ -282,20 +306,12 @@ body {
         width: 50%;
         padding: 1rem;
     }
-
-    
-    .navbar-nav li {
-        text-align: left;
-        margin-left: calc(5vw - 10px)
-    }
-
-
 }
 
 @media screen and (max-width: 767px) {
 
     .Contenido {
-        margin: 50px 0;
+        margin: 50px;
     }
 
     .info{
@@ -306,13 +322,14 @@ body {
 
     .about{
         display: block;
-        width: 75%;
-        margin: 1rem auto;
     }
 
     .about .infoAbout, .about .imagen{
         width: 100%;
-        margin: 1rem auto;
+    }
+
+    .imagen img {
+        width: 100%;
     }
 
     .infoSec3 {
@@ -321,43 +338,12 @@ body {
 
     .guide {
         display: block;
-        width: 75%;
-        margin: 1rem auto;
     }
 
     .imgGuide {
-        max-width: 75vw;
+        max-width: 100%;
         margin: auto;
         display: flex;
-    }
-
-    .textGuide {
-        margin: 1rem auto;
-    }
-
-    .our-team .title {
-        font-size: 20px;
-    }
-
-    .our-team .post {
-        font-size: 16px;
-    }
-
-    .our-team .team-info{
-        bottom: 10px;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footerLogo, .footerUl {
-        margin-bottom: 10px;
-    }
-
-    .card-img-overlay{
-        background-color: rgba(0, 0, 0, 0.5);
-
     }
 
     .categories{
@@ -374,61 +360,14 @@ body {
         width: 75%;
         margin: 3rem auto;
     }
-
 }
 
 @media screen and (max-width: 576px) {
-
-    .body-contacto, .body-formulario {
-        background-image: url(../img/fondo2.jpg);
-        background-size: auto;
+    .info{
+        position: static;
+        transform: none;
+        margin: 1rem auto;
     }
-
-    .contact{
-        width: 90%;
-        margin-top: 5rem;
-    }
-
-    .container .text {
-        font-size: 30px;
-    }
-
-
-    .button {
-        font-size: 15px;
-        width: 80%;
-      }
-
-      
-    .form{
-        margin-top: 5rem;
-    }
-
-    .form, .social{
-        padding: 1rem;
-        font-size: 12pt;
-    }
-
-    .container .text {
-        font-size: 30px;
-    }
-
-    .socialmedia{
-        column-gap: 2.5rem;
-    }
-
-    .socialmedia a{
-        font-size: 30pt;
-    }
-
-    .background{
-        width: auto;
-        height: 70vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 }
 
 /*--------------------------------------------------------- Footer ---------------------------------------------------------*/
@@ -462,9 +401,15 @@ body {
     text-decoration: none
 }
 
-
-
-
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerLogo, .footerUl {
+        margin-bottom: 10px;
+    }
+}
 
 /*--------------------------------------------------------- Botones ---------------------------------------------------------*/
 
@@ -612,7 +557,7 @@ a:hover {
 }
 
 .sectionProducts .single-product:hover .part-1 img {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
 }
 
 .sectionProducts #product-1 .part-1::before {
@@ -745,6 +690,79 @@ ol, ul {
     background-color: #91aa7c;
 }
 
+.descuento-cartelito{
+    background-color: rgb(59, 70, 52, 0.85);
+    z-index: 9;
+    color: white;
+    padding: 8px;
+    width: fit-content;
+    position: absolute;
+    margin-top: 15px;
+    text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .sectionProducts{
+        width: 100%;
+    }
+
+    .sectionProducts .container{
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .sectionProducts .container .row{
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-md-3, .col-md-9{
+        width: 90%;
+    }
+
+    .accordion{
+        width: 100%;
+    }
+
+    .col-lg-4{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    
+    .sectionProducts .container .row{
+        gap: 2rem;
+    }
+
+    .col-lg-4{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-lg-4{
+        width: 90%;
+        text-align: center;
+    }
+
+    .product-description{
+        margin: auto;
+    }
+
+    .sectionProducts .single-product .part-1 img {
+        width: -webkit-fill-available;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
 /*--------------------------------------------------------- Alumnos / Staff ---------------------------------------------------------*/
 
 .alumnos{
@@ -862,39 +880,47 @@ ol, ul {
     .our-team .team-info{
         bottom: 0px;
     }
-
-    .form, .social{
-        width: 90%;
-        font-size: 20pt;
-    }
 }
 
+@media screen and (max-width: 768px) {
+    .our-team .title {
+        font-size: 20px;
+    }
+
+    .our-team .post {
+        font-size: 16px;
+    }
+
+    .our-team .team-info{
+        bottom: 10px;
+    }
+}
 
 /*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
 
 .body-contacto, .body-formulario {
-    background-image: url(../img/productos-4.jpeg);
+    background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .contact{
-    width: 600px;
-    background-color: rgba(79, 79, 79, 0.5);
-    backdrop-filter: blur(20px);
-    padding: 25px;
-    margin: 3rem auto;
-    border-radius: 10px;
-    color: white;
+  width: 600px;
+  background: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin: 3rem auto;
+  border-radius: 10px;
 }
 
 .container .text{
-    text-align: center;
-    font-size: 40px;
-    background-color: white;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: #546348;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 form .form-row .input-data{
@@ -1024,6 +1050,29 @@ input:-webkit-autofill:active{
   
   .button:focus { outline:0; }
 
+  @media (max-width: 576px) {
+
+    .body-contacto, .body-formulario {
+        background-image: url(../img/fondo2.jpg);
+        background-size: auto;
+    }
+
+    .contact{
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+
+    .button {
+        font-size: 15px;
+        width: 80%;
+      }
+  }
+  
 
 /*--------------------------------------------------------- Formulario ---------------------------------------------------------*/
 
@@ -1090,6 +1139,36 @@ input:-webkit-autofill:active{
     list-style-type: none;
 }
 
+@media (max-width: 1024px) {
+    .form, .social{
+        width: 90%;
+        font-size: 20pt;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .form{
+        margin-top: 5rem;
+    }
+
+    .form, .social{
+        padding: 1rem;
+        font-size: 12pt;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+    .socialmedia{
+        column-gap: 2.5rem;
+    }
+
+    .socialmedia a{
+        font-size: 30pt;
+    }
+  }
 
 /*--------------------------------------------------------- Detalles ---------------------------------------------------------*/
 
