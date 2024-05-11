@@ -13,6 +13,7 @@ class Producto
     private $piel;
     private $lanzamiento;
     private $contenido;
+    private $descuento;
 
     public function catalogoCompleto(): array
     {
@@ -36,6 +37,8 @@ class Producto
                 $producto->piel = isset($value->piel) ? $value->piel : "No especificado";
                 $producto->lanzamiento = $value->lanzamiento;
                 $producto->contenido = $value->contenido;
+                $producto->descuento = $value->descuento;
+                
     
                 $catalogo[] = $producto;
             }
@@ -51,40 +54,44 @@ class Producto
      * @param string $nombre Un string con el nombre del nombre a buscar
      * @return producto[] Un Array lleno de instancias de objeto producto.
      */
-    public function filtrarCatalogo(string $filtro, string $valor): array
+    public function catalogoPorCategoria(string $categoria): array
     {
         $resultado = [];
         $catalogo = $this->catalogoCompleto();
-        
+    
         foreach ($catalogo as $p) {
-            switch ($filtro) {
-                case 'categoria':
-                    if ($p->getCategoria() == $valor) {
-                        $resultado[] = $p;
-                    }
-                    break;
-                case 'descuento':
-                    if ($p->getDescuento() == $valor) {
-                        $resultado[] = $p;
-                    }
-                    break;
-                default:
-                    break;
+            if ($p->getCategoria() == $categoria) {
+                $resultado[] = $p;
             }
         }
         return $resultado;
     }
 
+    public function catalogoPorDescuento(float $descuento): array
+    {
+        $resultado = [];
+        $catalogo = $this->catalogoCompleto();
+    
+        foreach ($catalogo as $p) {
+            if ($p->getDescuento() == $descuento) {
+                $resultado[] = $p;
+            }
+        }
+        return $resultado;
+    }
+    
+    
+
     /**
      * Devuelve los datos de un producto en particular
      * @param int $idProducto El ID único del producto a mostrar 
      */
-    public function productoPorId(int $idProducto): ?Producto
+    public function productoPorId(int $id): ?Producto
     {
         $catalogo = $this->catalogoCompleto();
 
         foreach ($catalogo as $p) {
-            if ($p->id == $idProducto) {
+            if ($p->id == $id) {
                 return $p;
             }
         }
@@ -92,17 +99,13 @@ class Producto
     }
 
 
-    public function precioAnterior($catalogo, $precio, $descuento): array
+    public function precioDescuento(): string
     {
-        $resultado = [];
-        foreach ($catalogo as $p) {
-            $precioAnterior = $p->precio + ($p->precio * $descuento / 100);
-            if ($precioAnterior == $precio) {
-                $resultado[] = $p;
-            }
-        }
+        $resultado = number_format(($this->precio - ($this->precio * $this->descuento /100)), 2, ".", ",");
         return $resultado;
-    }
+
+        }
+
     
 
 
@@ -160,4 +163,10 @@ class Producto
     {
         return $this->id;
     }
+
+    public function getDescuento()
+    {
+        return $this->descuento;
+    }
+
 }

@@ -3,17 +3,18 @@ require_once 'classes/producto.php';
 
 $id = $_GET['id'] ?? FALSE;
 $filtro = $_GET['filtro'] ?? FALSE;
+$descuento = $_GET['descuento'] ?? FALSE;
 
 $miProducto = new Producto();
-$productos = [];
 
 if ($filtro) {
-    $productos = $miProducto->filtrarCatalogo('categoria', $filtro);
+    $productos = $miProducto->catalogoPorCategoria($filtro);
+}else if($descuento){
+    $productos = $miProducto->catalogoPorDescuento($descuento);
 } else {
     $productos = $miProducto->catalogoCompleto();
 }
 ?>
-
 
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -66,6 +67,7 @@ if ($filtro) {
                                     <a href="index.php?sec=productos&filtro=piel-grasa" class="list-group-item">Piel grasa</a>
                                     <a href="index.php?sec=productos&filtro=piel-mixta" class="list-group-item">Piel mixta</a>
                                     <a href="index.php?sec=productos&filtro=piel-seca" class="list-group-item">Piel seca</a>
+                                    <a href="index.php?sec=productos&filtro=piel-seca" class="list-group-item">Piel madura</a>
                                 </ul>
                             </div>
                         </div>
@@ -95,9 +97,9 @@ if ($filtro) {
                         <div id="ofertasCollapse" class="accordion-collapse collapse" aria-labelledby="ofertasHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <a href="index.php?sec=productos&filtro=15" class="list-group-item">Hasta 15%</a>
-                                    <a href="index.php?sec=productos&filtro=20" class="list-group-item">Hasta 20%</a>
-                                    <a href="index.php?sec=productos&filtro=40" class="list-group-item">Hasta 40%</a>
+                                    <a href="index.php?sec=productos&descuento=15" class="list-group-item">Hasta 15%</a>
+                                    <a href="index.php?sec=productos&descuento=20" class="list-group-item">Hasta 20%</a>
+                                    <a href="index.php?sec=productos&descuento=40" class="list-group-item">Hasta 40%</a>
                                 </ul>
                             </div>
                         </div>
@@ -141,7 +143,7 @@ if ($filtro) {
                                     <h5 class="product-title"><?= $producto->getNombre() ?></h5>
                                     <p class="product-description"><?= $producto->getDescripcion() ?></p>
                                     <h4 class="product-old-price">$<?= $producto->precioFormateado() ?></h4>
-                                    <h4 class="product-price">$<?= $producto->precioFormateado() ?></h4>
+                                    <h4 class="product-price">$<?= $producto->precioDescuento() ?></h4>
                                 </div>
                             </div>
                         </div>
