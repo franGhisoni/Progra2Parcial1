@@ -1,21 +1,29 @@
-<nav class="navbar">
-    <a href="index.php">
-        <div class="logo"> 
-            <h1>NATURE</h1>
-        </div>
-    </a>
-    
-    <nav class="secciones">
-        
-        <ul class="listaNav">
-            <li><a href="index.php?sec=home">Inicio</a></li>
-            <li><a href="index.php?sec=home#about">Nosotros</a></li>
-            <li><a href="index.php?sec=productos">Productos</a></li>
-            <li><a href="index.php?sec=alumnos">Staff</a></li>
-            <li><a href="index.php?sec=contacto">Contacto</a></li>
-        </ul>
-        
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.php"><h1>NATURE</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.php?sec=home">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?sec=home#about">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?sec=productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?sec=alumnos">Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?sec=contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
     <div class="shop">
         <button class="bag">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">

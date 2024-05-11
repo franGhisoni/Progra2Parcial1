@@ -23,7 +23,7 @@ body {
     display: flex;
 }
 
-/*--------------------------------------------------------- Home ---------------------------------------------------------*/
+/*--------------------------------------------------------- Banner y Nav ---------------------------------------------------------*/
 
 .banner {
     width: 100%;
@@ -37,31 +37,38 @@ body {
     display: block;
 }
 
-.navbar{
+.bg-dark{
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     width: 100vw;
     z-index: 3;
-    background-color: rgba(79, 79, 79, 0.5);
+    background-color: rgba(79, 79, 79, 0.5) !important;
     backdrop-filter: blur(20px);
 }
 
-.secciones ul{
+.navbar-collapse ul{
     display: inline-flex;
+    margin: auto;
+    text-align: center;
 }
 
-.listaNav li{
+.navbar-nav li{
     padding: 10px;
     margin: 5px;
     text-decoration: none;
     list-style: none;
 }
 
-.listaNav li a{
+.navbar-nav li a{
     color: white;
     text-decoration: none;
+}
+
+.shop{
+    display: flex;
+    margin: 0 1rem;
 }
 
 .shop button{
@@ -70,6 +77,8 @@ body {
     padding: 10px;
     color: white;
 }
+
+/*--------------------------------------------------------- Home ---------------------------------------------------------*/
 
 .info {
     position: absolute;
@@ -223,9 +232,10 @@ body {
     align-items: center;
     width: 100%;
     margin: auto;
-    background-color: #e5e5e5;
+    background-color: #000000be;
     padding: 15px 5vw 0px 5vw;
     font-size: 0.8rem;
+    color: rgb(129, 129, 129);
 }
 
 .footerUl{
@@ -235,7 +245,6 @@ body {
 }
 
 .footerUl li{
-    padding: 10px;
     text-decoration: none;
     list-style: none;
 }
@@ -244,6 +253,15 @@ body {
     text-decoration: none
 }
 
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerLogo, .footerUl, div {
+        margin-bottom: 10px;
+    }
+}
 
 /*--------------------------------------------------------- Botones ---------------------------------------------------------*/
 
@@ -614,6 +632,39 @@ ol, ul {
     display: block;
     font-size: 14px;
     color: #464646;
+}
+
+@media screen and (max-width: 1024px) {
+    .row{
+        display: block;
+        margin: 3rem;
+    }
+
+    .our-team .title {
+        font-size: 30px;
+    }
+
+    .our-team .post {
+        font-size: 20px;
+    }
+
+    .our-team .team-info{
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-team .title {
+        font-size: 20px;
+    }
+
+    .our-team .post {
+        font-size: 16px;
+    }
+
+    .our-team .team-info{
+        bottom: 10px;
+    }
 }
 
 /*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
