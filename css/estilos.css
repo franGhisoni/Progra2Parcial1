@@ -37,7 +37,7 @@ body {
     display: block;
 }
 
-.bg-dark{
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,17 +48,9 @@ body {
     backdrop-filter: blur(20px);
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    z-index: 3;
-    background-color: rgba(79, 79, 79, 0.5);
-    backdrop-filter: blur(20px);
+.navbar-toggler{
+    border: 0;
 }
-
 
 .logo{
     display: flex;
@@ -97,6 +89,27 @@ body {
     padding: 10px;
     color: white;
 }
+
+@media (max-width: 991px) {
+
+    .navbar{
+        background-color: rgba(79, 79, 79, 0.85) !important;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        background-color: rgba(79, 79, 79, 0.85);
+    }
+
+    .navbar-nav li {
+        text-align: left;
+        margin-left: calc(5vw - 10px)
+    }
+}
+
 
 /*--------------------------------------------------------- Home ---------------------------------------------------------*/
 
