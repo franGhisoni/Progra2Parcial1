@@ -12,7 +12,7 @@
             "piel": ["todoTipo"],
             "lanzamiento": "2020-05-12",
             "contenido": 15,
-            "descuento": 15,
+            "descuento": 0,
             "waterproof": false
         },
         {
@@ -72,7 +72,7 @@
             "piel": ["todoTipo"],
             "lanzamiento": "2017-06-30",
             "contenido": 30,
-            "descuento": 20,
+            "descuento": 0,
             "waterproof": false
         },
         {
@@ -87,7 +87,7 @@
             "piel": ["todoTipo"],
             "lanzamiento": "2021-10-15",
             "contenido": 15,
-            "descuento": 40,
+            "descuento": 0,
             "waterproof": true
         },
         {
@@ -102,7 +102,7 @@
             "piel": ["pielSeca", "pielMadura"],
             "lanzamiento": "2022-04-05",
             "contenido": 60,
-            "descuento": 15,
+            "descuento": 0,
             "waterproof": false
         }
     ],
@@ -179,7 +179,7 @@
             "tonosDisponibles": ["Champagne", "Rose Gold"],
             "lanzamiento": "2022-02-28",
             "contenido": 15,
-            "descuento": 40,
+            "descuento": 0,
             "waterproof": true
         },
         {
@@ -226,7 +226,7 @@
             "tipoCabello": ["dañado", "seco"],
             "lanzamiento": "2020-11-10",
             "contenido": 15,
-            "descuento": 40,
+            "descuento": 0,
             "waterproof": false
         },
         {
@@ -256,7 +256,7 @@
             "tipoCabello": ["todoTipo"],
             "lanzamiento": "2018-08-15",
             "contenido": 30,
-            "descuento": 20,
+            "descuento": 0,
             "waterproof": false
         },
         {
@@ -316,7 +316,7 @@
             "tipoCabello": ["todoTipo"],
             "lanzamiento": "2023-09-25",
             "contenido": 15,
-            "descuento": 40,
+            "descuento": 0,
             "waterproof": false
         }
         

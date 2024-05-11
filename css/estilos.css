@@ -90,26 +90,6 @@ body {
     color: white;
 }
 
-@media (max-width: 991px) {
-
-    .navbar{
-        background-color: rgba(79, 79, 79, 0.85) !important;
-    }
-
-    .navbar-collapse {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 100%;
-        background-color: rgba(79, 79, 79, 0.85);
-    }
-
-    .navbar-nav li {
-        text-align: left;
-        margin-left: calc(5vw - 10px)
-    }
-}
-
 
 /*--------------------------------------------------------- Home ---------------------------------------------------------*/
 
@@ -257,6 +237,21 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+
+    .navbar {
+        display: flex;
+      }
+    
+      .navbar-collapse {
+        order: 2; 
+      }
+    
+      .shop {
+        order: 1; 
+      }
+
+
+
     .info {
         width: 70%;
         left: 40%;
@@ -287,12 +282,20 @@ body {
         width: 50%;
         padding: 1rem;
     }
+
+    
+    .navbar-nav li {
+        text-align: left;
+        margin-left: calc(5vw - 10px)
+    }
+
+
 }
 
 @media screen and (max-width: 767px) {
 
     .Contenido {
-        margin: 50px;
+        margin: 50px 0;
     }
 
     .info{
@@ -303,6 +306,8 @@ body {
 
     .about{
         display: block;
+        width: 75%;
+        margin: 1rem auto;
     }
 
     .about .infoAbout, .about .imagen{
@@ -316,10 +321,12 @@ body {
 
     .guide {
         display: block;
+        width: 75%;
+        margin: 1rem auto;
     }
 
     .imgGuide {
-        max-width: 50vw;
+        max-width: 75vw;
         margin: auto;
         display: flex;
     }
@@ -327,14 +334,101 @@ body {
     .textGuide {
         margin: 1rem auto;
     }
+
+    .our-team .title {
+        font-size: 20px;
+    }
+
+    .our-team .post {
+        font-size: 16px;
+    }
+
+    .our-team .team-info{
+        bottom: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerLogo, .footerUl {
+        margin-bottom: 10px;
+    }
+
+    .card-img-overlay{
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .categories{
+        text-align: center
+    }
+
+    .section3{
+        width: 75%;
+        margin: 3rem auto;
+    }
+
+    .destacados{
+        text-align: center;
+        width: 75%;
+        margin: 3rem auto;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
-    .info{
-        position: static;
-        transform: none;
-        margin: 1rem auto;
+
+    .body-contacto, .body-formulario {
+        background-image: url(../img/fondo2.jpg);
+        background-size: auto;
     }
+
+    .contact{
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+
+    .button {
+        font-size: 15px;
+        width: 80%;
+      }
+
+      
+    .form{
+        margin-top: 5rem;
+    }
+
+    .form, .social{
+        padding: 1rem;
+        font-size: 12pt;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+    .socialmedia{
+        column-gap: 2.5rem;
+    }
+
+    .socialmedia a{
+        font-size: 30pt;
+    }
+
+    .background{
+        width: auto;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 /*--------------------------------------------------------- Footer ---------------------------------------------------------*/
@@ -368,15 +462,9 @@ body {
     text-decoration: none
 }
 
-@media screen and (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-    .footerLogo, .footerUl {
-        margin-bottom: 10px;
-    }
-}
+
+
+
 
 /*--------------------------------------------------------- Botones ---------------------------------------------------------*/
 
@@ -774,47 +862,39 @@ ol, ul {
     .our-team .team-info{
         bottom: 0px;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .our-team .title {
-        font-size: 20px;
-    }
-
-    .our-team .post {
-        font-size: 16px;
-    }
-
-    .our-team .team-info{
-        bottom: 10px;
+    .form, .social{
+        width: 90%;
+        font-size: 20pt;
     }
 }
+
 
 /*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
 
 .body-contacto, .body-formulario {
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/productos-4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .contact{
-  width: 600px;
-  background: rgb(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-  padding: 25px;
-  margin: 3rem auto;
-  border-radius: 10px;
+    width: 600px;
+    background-color: rgba(79, 79, 79, 0.5);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    color: white;
 }
 
 .container .text{
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  background-color: #546348;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 40px;
+    background-color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 form .form-row .input-data{
@@ -944,29 +1024,6 @@ input:-webkit-autofill:active{
   
   .button:focus { outline:0; }
 
-  @media (max-width: 576px) {
-
-    .body-contacto, .body-formulario {
-        background-image: url(../img/fondo2.jpg);
-        background-size: auto;
-    }
-
-    .contact{
-        width: 90%;
-        margin-top: 5rem;
-    }
-
-    .container .text {
-        font-size: 30px;
-    }
-
-
-    .button {
-        font-size: 15px;
-        width: 80%;
-      }
-  }
-  
 
 /*--------------------------------------------------------- Formulario ---------------------------------------------------------*/
 
@@ -1033,36 +1090,6 @@ input:-webkit-autofill:active{
     list-style-type: none;
 }
 
-@media (max-width: 1024px) {
-    .form, .social{
-        width: 90%;
-        font-size: 20pt;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .form{
-        margin-top: 5rem;
-    }
-
-    .form, .social{
-        padding: 1rem;
-        font-size: 12pt;
-    }
-
-    .container .text {
-        font-size: 30px;
-    }
-
-    .socialmedia{
-        column-gap: 2.5rem;
-    }
-
-    .socialmedia a{
-        font-size: 30pt;
-    }
-  }
 
 /*--------------------------------------------------------- Detalles ---------------------------------------------------------*/
 
