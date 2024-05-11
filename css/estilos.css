@@ -1006,4 +1006,50 @@ input:-webkit-autofill:active{
 }
 
 
-/* fin de cantidad de productos */
+/*--------------------------------------------------------- 404 ---------------------------------------------------------*/
+
+.body-404 {
+    background-image: url('../img/fondo3.jpg');
+  }
+
+  .error-text {
+    font-size: 20vw;
+    opacity: 50%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .message {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 50%;
+  }
+
+  .boton404{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button404 {
+    background-color: rgba(59, 59, 59, 0.8);
+    color: darkgray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .button404:hover {
+    background-color: rgb(48, 56, 41, 0.8);
+    color: #91aa7c;
+  }
