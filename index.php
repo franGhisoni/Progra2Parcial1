@@ -87,6 +87,25 @@ if (!array_key_exists($seccion, $secciones_validas)) {
             });
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.quantity-increase').on('click', function() {
+            var $input = $(this).parent().find('input[name="cantidad"]');
+            var newValue = parseInt($input.val()) + 1;
+            $input.val(newValue);
+        });
+
+        $('.quantity-decrease').on('click', function() {
+            var $input = $(this).parent().find('input[name="cantidad"]');
+            var newValue = parseInt($input.val()) - 1;
+            if (newValue >= 1) {
+                $input.val(newValue);
+            }
+        });
+    });
+</script>
+
 
 </body>
 </html>

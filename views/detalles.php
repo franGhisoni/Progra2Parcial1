@@ -9,7 +9,6 @@ $producto = $miObjetoProducto->productoPorId($id);
     <div class="row">
         <?PHP if (!empty($producto)) { ?>
             <div class="col">
-            <h1 class="text-center my-5"> <?= $producto->getNombre() ?></h1>
                 <div class="mb-5">
                     <div class="row g-0">
                         <div class="col-md-5">
@@ -17,19 +16,18 @@ $producto = $miObjetoProducto->productoPorId($id);
                         </div>
                         <div class="col-md-7 d-flex flex-column p-3">
                             <div class="card-body flex-grow-0">
-                                <p class="fs-4 m-0 fw-bold"><?= $producto->getNombre() ?></p>
-                                <h2 class="card-title fs-2 mb-4"><?= $producto->getNombre(); ?></h2>
+                                <h2 class="fs-4 m-0 fw-bold"><?= $producto->getNombre() ?></h2>
                             </div>
 
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><span class="fw-light"><?= $producto->getDescripcion(); ?></li>
                                 <li class="list-group-item">
-                                    <span class="fw-light"><?= $producto->getNombre(); ?></span>
-                                    <div class="quantity-selector">
-                                        <button class="quantity-decrease bg-black border-0 text-white p-1">-</button>
-                                        <input type="number" name="cantidad" value="1" min="1">
-                                        <button class="quantity-increase">+</button>
-                                    </div>
+                                <div class="quantity-selector">
+                                    <p>Cantidad</p>
+                                    <button class="quantity-decrease">-</button>
+                                    <input type="number" name="cantidad" value="1" min="1" readonly>
+                                    <button class="quantity-increase">+</button>
+                                </div>
                                 </li>
                                 <li class="list-group-item"><span class="fw-light"> Fecha de lanzamiento: <?= $producto->getLanzamiento(); ?></li>
                             </ul>
@@ -48,11 +46,43 @@ $producto = $miObjetoProducto->productoPorId($id);
                                 </div>
 
                             </div>
+
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    Características del producto
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong>Categoría:</strong>
+                                            <span class="characteristic-value"><?= $producto->getCategoria(); ?></span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Stock:</strong>
+                                            <span class="characteristic-value"><?= $producto->getStock(); ?></span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Contenido:</strong>
+                                            <span class="characteristic-value"><?= $producto->getContenido(); ?> ml</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Waterproof:</strong>
+                                            <span class="characteristic-value"><?= $producto->getWaterproof() ? 'Sí' : 'No'; ?></span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Vegano:</strong>
+                                            <span class="characteristic-value"><?= $producto->gatVegano() ? 'Sí' : 'No'; ?></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
-
-                <div class="cuadrado"></div>
 
 
             </div>

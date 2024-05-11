@@ -4,6 +4,7 @@ require_once 'classes/producto.php';
 $id = $_GET['id'] ?? FALSE;
 $filtro = $_GET['filtro'] ?? FALSE;
 $descuento = $_GET['descuento'] ?? FALSE;
+$piel = $_GET['piel'] ?? FALSE;
 
 $miProducto = new Producto();
 
@@ -11,6 +12,8 @@ if ($filtro) {
     $productos = $miProducto->catalogoPorCategoria($filtro);
 }else if($descuento){
     $productos = $miProducto->catalogoPorDescuento($descuento);
+}else if($piel){
+    $productos = $miProducto->catalogoPorPiel($piel);
 } else {
     $productos = $miProducto->catalogoCompleto();
 }
@@ -25,21 +28,21 @@ if ($filtro) {
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/Productos-4.jpeg" class="d-block w-100" alt="...">
+            <img src="img/Productos-4.jpeg" class="d-block w-100" alt="Imagen de <?= $producto->getNombre() ?>">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/Productos-3.jpeg" class="d-block w-100" alt="...">
+            <img src="img/Productos-3.jpeg" class="d-block w-100" alt="Imagen de <?= $producto->getNombre() ?>">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/Productos-2.jpeg" class="d-block w-100" alt="...">
+            <img src="img/Productos-2.jpeg" class="d-block w-100" alt="Imagen de <?= $producto->getNombre() ?>">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
@@ -63,11 +66,11 @@ if ($filtro) {
                         <div id="ingredientesCollapse" class="accordion-collapse collapse" aria-labelledby="ingredientesHeading" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <ul class="list-group">
-                                    <a href="index.php?sec=productos&filtro=todo-tipo" class="list-group-item">Todo tipo</a>
-                                    <a href="index.php?sec=productos&filtro=piel-grasa" class="list-group-item">Piel grasa</a>
-                                    <a href="index.php?sec=productos&filtro=piel-mixta" class="list-group-item">Piel mixta</a>
-                                    <a href="index.php?sec=productos&filtro=piel-seca" class="list-group-item">Piel seca</a>
-                                    <a href="index.php?sec=productos&filtro=piel-seca" class="list-group-item">Piel madura</a>
+                                    <a href="index.php?sec=productos&piel=todoTipo" class="list-group-item">Todo tipo</a>
+                                    <a href="index.php?sec=productos&piel=pielGrasa" class="list-group-item">Piel grasa</a>
+                                    <a href="index.php?sec=productos&piel=pielMixta" class="list-group-item">Piel mixta</a>
+                                    <a href="index.php?sec=productos&piel=pielSeca" class="list-group-item">Piel seca</a>
+                                    <a href="index.php?sec=productos&piel=pielSeca" class="list-group-item">Piel madura</a>
                                 </ul>
                             </div>
                         </div>
@@ -122,7 +125,7 @@ if ($filtro) {
                         <div class="descuento-cartelito">Descuento: <?= $producto->getDescuento() ?>%</div>
                     <?php } ?>
                     <div class="overlay"></div>
-                    <img class="part-1 img" src="./img/<?= $producto->getImagen() ?>" alt="">
+                    <img class="part-1 img" src="./img/<?= $producto->getImagen() ?>" alt="Imagen de <?= $producto->getNombre() ?>">
                     <ul>
                         <li><a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">

@@ -14,6 +14,9 @@ class Producto
     private $lanzamiento;
     private $contenido;
     private $descuento;
+    private $waterproof;
+    private $vegano;
+
 
     public function catalogoCompleto(): array
     {
@@ -34,11 +37,12 @@ class Producto
                 $producto->imagen = $value->imagen;
                 $producto->stock = $value->stock;
                 $producto->categoria = $value->categoria;
-                $producto->piel = isset($value->piel) ? $value->piel : "No especificado";
+                $producto->piel = isset($value->piel) ? $value->piel : ["No especificado"];
                 $producto->lanzamiento = $value->lanzamiento;
                 $producto->contenido = $value->contenido;
                 $producto->descuento = $value->descuento;
-                
+                $producto->waterproof = $value->waterproof;
+                $producto->vegano = $value->vegano;
     
                 $catalogo[] = $producto;
             }
@@ -80,6 +84,27 @@ class Producto
         return $resultado;
     }
     
+
+    public function catalogoPorPiel(string $piel): array
+    {
+        $resultado = [];
+        $catalogo = $this->catalogoCompleto();
+        
+        foreach ($catalogo as $producto) {
+            // Obtener todos los tipos de piel del producto
+            $tiposDePiel = $producto->getPiel();
+            
+            // Verificar si el tipo de piel proporcionado está presente en los tipos de piel del producto
+            if (in_array($piel, $tiposDePiel)) {
+                $resultado[] = $producto;
+            }
+        }
+        
+        return $resultado;
+    }
+    
+
+
     
 
     /**
@@ -169,4 +194,18 @@ class Producto
         return $this->descuento;
     }
 
+    public function getContenido()
+    {
+        return $this->contenido;
+    }
+
+    public function getwaterproof()
+    {
+        return $this->waterproof;
+    }
+
+    public function gatVegano()
+    {
+        return $this->vegano;
+    }
 }
