@@ -114,11 +114,12 @@ h1{
 
       .navbar-nav li {
         text-align: left;
-        margin-left: calc(5vw - 10px)
+        margin-left: calc(5vw - 10px);
     }
 
 .card-img-overlay{
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 }
@@ -173,6 +174,7 @@ h1{
 .card1 {
     position: relative;
     border-radius: 10px;
+    margin: 0.5rem;
 }
 
 .card1::before {
@@ -504,6 +506,10 @@ h1{
     width: 100%;
 }
 
+.ofertas h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 a,
 a:hover {
@@ -511,9 +517,9 @@ a:hover {
     color: white;
 }
 
-/* .sectionProducts {
-    padding: 80px 0 54px;
-} */
+.sectionProducts{
+    margin: 6rem auto;
+}
 
 .sectionProducts .header {
     margin-bottom: 50px;
@@ -541,6 +547,8 @@ a:hover {
     max-height: 290px;
     margin-bottom: 20px;
     overflow: hidden;
+    width: 100%;
+    object-fit: cover;
 }
 
 .sectionProducts .single-product .part-1 .overlay {
@@ -726,6 +734,10 @@ ol, ul {
         width: 100%;
     }
 
+    h2{
+        text-align: center;
+    }
+
     .sectionProducts .container{
         display: flex;
         margin: auto;
@@ -749,6 +761,10 @@ ol, ul {
 
     .col-lg-4{
         width: 30%;
+    }
+
+    .ofertas .sectionProducts .container{
+        display: block;
     }
 }
 
@@ -779,7 +795,7 @@ ol, ul {
     }
 
     .card-img-overlay{
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 

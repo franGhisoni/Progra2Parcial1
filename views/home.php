@@ -82,9 +82,8 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
             </div>
         </div>
 
-        <div>
+    <div class="ofertas">
     <section class="sectionProducts">
-        <!-- Aquí va tu sección de productos -->
         <div class="container">
             <h2>Nustros productos destacados de la semana</h2>
             <div class="row">
@@ -136,12 +135,9 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
             </div>
             
         <?php } ?>
-
-
-
-
-
-            
+    </section>
+    </div>
+    <section class="guia">  
             <div class="guide">
                 <div>
                     <img class="imgGuide" src="img/img cuadrada 1.jpg" alt="imagen promocional para informacion">
