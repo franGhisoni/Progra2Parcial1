@@ -6,7 +6,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
 ?>
 
 <div class="banner">
-            <img class="background" src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (2).jpg" alt="imagen banner 1">
+            <img class="background" src="img/banner/banner1.jpg" alt="imagen banner 1">
             <div class="info">
                 <h2>Diseñado para realzar tu belleza</h2>
                 <p class="pExplore">En NATURE, creemos en realzar tu belleza natural. Nuestra gama de productos de belleza de alta calidad está diseñada para hacerte sentir segura y radiante en cada momento. Únete a nosotros y descubre tu mejor versión.</p>
@@ -27,7 +27,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
             <div class="catGrid">
                 <div class="card1 text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Skincare">
-                        <img src="img/img cuadrada 1.jpg" class="card-img" alt="imagen de productos para skincare">
+                        <img src="img/img-cuadrada-1.jpg" class="card-img" alt="imagen de productos para skincare">
                         <div class="card-img-overlay">
                             <h3 class="card-title">Skincare</h3>
                         </div>
@@ -35,7 +35,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
                 </div>
                 <div class="card1 text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Maquillaje">
-                        <img src="img/img cuadrada 2.jpg" class="card-img" alt="imagen de productos para maquillarse">
+                        <img src="img/img-cuadrada-2.jpg" class="card-img" alt="imagen de productos para maquillarse">
                         <div class="card-img-overlay">
                             <h3 class="card-title">Makeup</h3>
                         </div>
@@ -43,7 +43,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
                 </div>
                 <div class="card1 text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Cabello">
-                        <img src="img/img cuadrada 3.jpg" class="card-img" alt="imagen de productos para el cabello">
+                        <img src="img/img-cuadrada-3.jpg" class="card-img" alt="imagen de productos para el cabello">
                         <div class="card-img-overlay">
                             <h3 class="card-title">Hair</h3>
                         </div>
@@ -66,7 +66,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
                 </div>
             </div>
             <div class="imagen">
-                <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="imagen promocional para informacion">
+                <img src="img/imagen2.jpg" alt="imagen promocional para informacion">
             </div>
         </div>
         <div class="section3">
@@ -75,7 +75,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
                 <p>Por eso, nos enorgullece decir que la composición de nuestros productos es completamente segura y suave para todo tipo de piel.</p>
             </div>
             <div class="section3img">
-                <img src="img/vista-productos-belleza-masculinos-pantalla-roca-o-piedra (3).jpg" alt="imagen promocional para informacion">
+                <img src="img/imagen1.jpg" alt="imagen promocional para informacion">
             </div>
             <div class="frase">
                 <p>Priorizamos un enfoque personalizado para el cuidado de la piel, ofreciendo productos eficaces adaptados a sus necesidades únicas. Valoramos profundamente a nuestros clientes, los mantenemos informados sobre nuevos productos y los deleitamos con obsequios ocasionales.</p>
@@ -140,7 +140,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
     <section class="guia">  
             <div class="guide">
                 <div>
-                    <img class="imgGuide" src="img/img cuadrada 1.jpg" alt="imagen promocional para informacion">
+                    <img class="imgGuide" src="img/img-cuadrada-1.jpg" alt="imagen promocional para informacion">
                 </div>
                 <div class="textGuide">
                     <h2>Guía de Prueba de Parches</h2>

@@ -221,6 +221,8 @@ h1{
 .imagen img{
     width: 40vw;
     border-radius: 10px;
+    height: 500px;
+    object-fit: cover;
 }
 
 .infoAbout{
@@ -243,6 +245,11 @@ h1{
 
 .section3{
     margin-top: 150px;
+}
+
+.section3img{
+    display: flex;
+    justify-content: center;
 }
 
 .section3img img {
@@ -504,6 +511,10 @@ h1{
     object-position: center center;
     height: 100%;
     width: 100%;
+}
+
+.d-none {
+    text-shadow: 2px 2px 5px black;
 }
 
 .ofertas h2{
@@ -935,7 +946,7 @@ ol, ul {
 /*--------------------------------------------------------- Contacto ---------------------------------------------------------*/
 
 .body-contacto, .body-formulario {
-    background-image: url(../img/productos-4.jpeg);
+    background-image: url(../img/productos/productos-4.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1143,7 +1154,6 @@ input:-webkit-autofill:active{
   }
 
 .socialmedia:has(a:hover) a:not(:hover){
-    scale: 0.8;
     opacity: 0.8;
     filter:blur(4px)
 }
@@ -1152,11 +1162,11 @@ input:-webkit-autofill:active{
     font-size: 35pt;
     color: #FFFFFF;
     cursor: pointer;
-    transition: scale 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+    transition: transform 0.25s ease-in, opacity 0.25s ease-in, filter 0.25s ease-in;
+}
 
-    &:hover{
-        scale: 1.2;
-    }
+.socialmedia a:hover{
+    transform: scale(1.2);
 }
 
 .form{
@@ -1336,7 +1346,7 @@ input::-webkit-inner-spin-button {
 
 
 .body-404 {
-    background-image: url('../img/fondo3.jpg');
+    background-image: url('../img/fondo404.jpg');
   }
 
   .error-text {

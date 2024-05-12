@@ -28,24 +28,24 @@ if ($filtro) {
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/Productos-4.jpeg" class="d-block w-100" alt="Producto en oferta 1">
+            <img src="img/productos/productos-4.jpeg" class="d-block w-100" alt="Nuestros productos 1">
             <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
+                <h5>Descubre Nuestra Colección</h5>
+                <p>Descripción: Explora nuestra selección cuidadosamente curada de productos naturales, diseñados para nutrir tu piel, cabello y cuerpo de manera saludable y sostenible.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/Productos-3.jpeg" class="d-block w-100" alt="Producto en oferta 2">
+            <img src="img/productos/productos-3.jpeg" class="d-block w-100" alt="Nuestros productos 2">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h5>Explora Nuestra Gama de Productos</h5>
+                <p>Productos creados con ingredientes orgánicos y libres de químicos agresivos, nuestros productos son una opción consciente para aquellos que buscan una belleza más saludable y respetuosa con el medio ambiente.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/Productos-2.jpeg" class="d-block w-100" alt="Producto en oferta 3">
+            <img src="img/productos/productos-2.jpeg" class="d-block w-100" alt="Nuestros productos 3">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+                <h5>Experimenta el Poder Transformador de la Naturaleza</h5>
+                <p>Déjate seducir por la belleza de la naturaleza con nuestra línea de productos naturales inspirados en los elementos más puros de la tierra.</p>
             </div>
         </div>
     </div>

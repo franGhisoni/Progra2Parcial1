@@ -21,7 +21,7 @@
         <div class="col">
             <div class="our-team">
                 <div class="pic">
-                <img src="img/2.jpg" alt="Florencia Sueiro">
+                <img src="img/2.webp" alt="Florencia Sueiro">
                     <ul class="redes">
                     <li><a href="https://www.instagram.com/otroalienn/" target="_blank" class="fab fa-instagram"></a></li>
                     <li><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=florencia.sueiro@davinci.edu.ar" target="_blank" class="fab fa-at"></a></li>
