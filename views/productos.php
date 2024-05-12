@@ -28,21 +28,21 @@ if ($filtro) {
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/Productos-4.jpeg" class="d-block w-100" alt="">
+            <img src="img/Productos-4.jpeg" class="d-block w-100" alt="Producto en oferta 1">
             <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/Productos-3.jpeg" class="d-block w-100" alt="">
+            <img src="img/Productos-3.jpeg" class="d-block w-100" alt="Producto en oferta 2">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/Productos-2.jpeg" class="d-block w-100" alt="">
+            <img src="img/Productos-2.jpeg" class="d-block w-100" alt="Producto en oferta 3">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
