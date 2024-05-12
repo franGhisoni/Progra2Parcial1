@@ -25,7 +25,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
         <div class="categories">
             <h2>Categorias</h2>
             <div class="catGrid">
-                <div class="card text-bg-dark">
+                <div class="card1 text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Skincare">
                         <img src="img/img cuadrada 1.jpg" class="card-img" alt="imagen de productos para skincare">
                         <div class="card-img-overlay">
@@ -33,7 +33,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
                         </div>
                     </a>
                 </div>
-                <div class="card text-bg-dark">
+                <div class="card1 text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Maquillaje">
                         <img src="img/img cuadrada 2.jpg" class="card-img" alt="imagen de productos para maquillarse">
                         <div class="card-img-overlay">
@@ -41,7 +41,7 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
                         </div>
                     </a>
                 </div>
-                <div class="card text-bg-dark">
+                <div class="card1 text-bg-dark">
                     <a href="index.php?sec=productos&filtro=Cabello">
                         <img src="img/img cuadrada 3.jpg" class="card-img" alt="imagen de productos para el cabello">
                         <div class="card-img-overlay">
@@ -127,13 +127,8 @@ $productosDestacados = $miProducto->catalogoDestacado(true);
             <div class="col">
                 <h2 class="text-center m-5">No se encontraron productos destacados.</h2>
             </div>
-        <?php } ?>
-
-
-
-
-
             
+        <?php } ?>
             <div class="guide">
                 <div>
                     <img class="imgGuide" src="img/img cuadrada 1.jpg" alt="imagen promocional para informacion">
