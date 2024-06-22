@@ -12,7 +12,7 @@ $conexion = new PDO(DB_DNS, DB_USER, DB_PASSWORD);
 
 $query 
 
-// holis commit
+// holis commitakjsdnjkashndjks
 
 
 require_once "classes/Producto.php";
