@@ -1,4 +1,20 @@
 <?php
+
+
+const DB_SERVER = "localhost";
+const DB_USER = "root";
+const DB_PASSWORD = "5";
+const DB_NAME = "progra2_parcial2";
+
+const DB_DNS = "mysql:host=" . DB_SERVER . ";dbname=" . DB_NAME . ";charset=utf8mb4";
+
+$conexion = new PDO(DB_DNS, DB_USER, DB_PASSWORD);
+
+$query 
+
+// holaaaa
+
+
 require_once "classes/Producto.php";
 
 $secciones_validas = [
